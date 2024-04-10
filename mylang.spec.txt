@@ -1,0 +1,161 @@
+
+/* Compiler directives start with an '@' symbol */
+const str: any = @import("string");
+const io := @import("io");
+const mem := @import("memory");
+const int_size: ulong = @sizeof(int);
+@warn("This is a warning");
+
+@assert(true, "This is surely a true statement (get it? the statement is 'true')" );
+
+// Basic Hello World program
+// argv is a pointer to an array of pointers to char arrays
+func main(argc: int, argv: *[]*[]char ): int {
+	// arrays are not bounds checked, string literals ends in a null character ( '\0' )
+	const hii: char[] = "Hello, World!";
+	io.puts(hii);
+	return 0;
+}
+
+// dual return values
+func add2to2(x: int, y: int) int, int {
+	x += 2;
+	y += 2;
+	return x, y;
+}
+
+/*
+ * Regular types
+ * 
+ * char       // signed 1 byte
+ * uchar      // unsigned 1 byte
+ * short      // signed 2 bytes
+ * ushort     // unsigned 2 bytes
+ * int        // signed 4 bytes
+ * uint       // unsigned 4 bytes
+ * long       // signed regular register len (8 bytes on 64 bit machines)
+ * ulong      // unsigned --||--
+ * long long  // signed 8 bytes
+ * long ulong // unsigned 8 bytes
+ * // TODO: 128 bit int types
+ * 
+ * float       // 32 bit floating point
+ * double      // 64 bit floating point
+ * long double // 128 bit floating point
+ * 
+ * any  // any type, Is not a pointer
+ * type // the type of a type is a type
+ * void // null, nothing, nada
+ * 
+ * Why we use names for types instead of e.g. u32 is because it leads to 
+ * better readability.
+ * The types have a defined length in the standard and should not change.
+ */
+
+// functions are not exported by default
+export func add(x: int, y: int): int {
+	return x + y;
+}
+
+// defining an external function
+extern func memset(dest: any[], c: int, count: ulong) any[];
+
+// structs (are not C structs if extern specifier is not used)
+struct String {
+	// str is public
+	export var str: *char[];
+	var len: ulong;
+	var size: ulong;
+}
+
+// struct methods
+export func String.init(s: char[]): String {
+	if (s == nil) {
+		s = mem.alloc(24, char);
+		return : String = {s, 0, 24};
+	}
+	var len: ulong = str.len(s);
+	var size: ulong = (len & (24 - 1)) + 24;
+	var dest: *char[] = mem.alloc(size, char);
+
+	// sneaky C function
+	memset(dest, 0, size); 
+
+	mem.copy(dest, s, len);
+
+	// return and denote that this is a String
+	return : String = {.str = dest, .len = len, .size = size};
+}
+
+// will always return nil, no matter what (can only do this with constants
+export func String.destroy(s: String): nil {
+	mem.free(s.str);
+}
+
+export func String.cmp(self: String, other: String): int {
+	var r: int = 0;
+	
+	// regular C style for loop (while and do while loops work as expected too)
+	for (var i := 0; (self[i] != '\0') || (other[i] != '\0'); i++) {
+		if ( r = self[i] - other[i]) return r;
+	}
+	return -1;
+}
+
+// const functions are for functions that do not need to be evaluated at runtime
+// a.k.a no side effects
+export const func String.data(self: String, i: ulong) char[] {
+	return self.str;
+}
+
+// any is a generic type for any kind of type (the type of a struct is its name)
+// @typeof( any(String) ) == String
+
+// @sizeof(any) will give the size of the kind of type it refers to
+export struct Union {
+	var u: any;
+}
+
+// A struct method wihtout a name is a convertion function
+// There is no constructor or destrcutor. Use .init and .destroy if the struct needs to be destroyed after use
+export func Union.(u: const any): Union {
+	return: Union = { u };
+}
+
+export func Union.unpack(self: Union): any {
+	@assert(self.hasValue());
+	return self.u;
+}
+
+// type casts  ( this is not a good implementation of Union.hasValue() )
+export func Union.hasValue(self: Union) bool {
+	return bool(self.u);
+}
+
+// if any struct has complies with an interface, it can be used with it
+interface file {
+    // reads size bytes from the file returns a pointer to dst
+    func read(self: any, dst: *any, size: ulong) *any;
+
+    // writes size bytes from src to the file
+    func write(self: any, src: *any, size: ulong) void;
+}
+
+// inline assembly
+// (write call for Linux x86_64)
+func write(fd: int, str: *char[], size: int): int {
+	@register("rdi", fd);
+	@register("rsi", str);
+	@register("rdx", size);
+	var err: int;
+	@register("rax", err);
+	asm (
+		"mov $1, rax\n\t"
+		"syscall"
+		: "rdi", "rsi", "rdx"
+		: "rax"
+		: "memory"
+	 );
+	return err;
+	
+}
