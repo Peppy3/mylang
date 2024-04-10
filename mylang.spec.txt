@@ -10,15 +10,15 @@ const int_size: ulong = @sizeof(int);
 
 // Basic Hello World program
 // argv is a pointer to an array of pointers to char arrays
-func main(argc: int, argv: *[]*[]char ): int {
+func main(void): int {
 	// arrays are not bounds checked, string literals ends in a null character ( '\0' )
-	const hii: char[] = "Hello, World!";
+	const hii: []char = "Hello, World!";
 	io.puts(hii);
 	return 0;
 }
 
 // dual return values
-func add2to2(x: int, y: int) int, int {
+func add2to2(x: i32, y: i32): i32, i32 {
 	x += 2;
 	y += 2;
 	return x, y;
@@ -27,34 +27,39 @@ func add2to2(x: int, y: int) int, int {
 /*
  * Regular types
  * 
- * char       // signed 1 byte
- * uchar      // unsigned 1 byte
- * short      // signed 2 bytes
- * ushort     // unsigned 2 bytes
- * int        // signed 4 bytes
- * uint       // unsigned 4 bytes
- * long       // signed regular register len (8 bytes on 64 bit machines)
- * ulong      // unsigned --||--
- * long long  // signed 8 bytes
- * long ulong // unsigned 8 bytes
- * // TODO: 128 bit int types
+ * i8    // signed 1 byte
+ * u8    // unsigned 1 byte
+ * i16   // signed 2 bytes
+ * u16   // unsigned 2 bytes
+ * i32   // signed 4 bytes
+ * u32   // unsigned 4 bytes
+ * i64   // signed 8 bytes
+ * u64   // unsigned 8 bytes
+ * i128  // signed 16 byte
+ * u128  // unsigned 16 byte
  * 
- * float       // 32 bit floating point
- * double      // 64 bit floating point
- * long double // 128 bit floating point
+ * bool  // true or false
+ * char  // alias for u8
+ * int   // alias for i32
+ * uint  // alias for u32
+ * long  // alias for i64
+ * ulong // alias for u64
+ *
+ * uintptr // a type big enough to hold a pointer
+ *
+ * f32   // 32 bit floating point
+ * f64   // 64 bit floating point
+ * f128  // 128 bit floating point
  * 
- * any  // any type, Is not a pointer
+ * any  // any type, is not a pointer
  * type // the type of a type is a type
  * void // null, nothing, nada
  * 
- * Why we use names for types instead of e.g. u32 is because it leads to 
- * better readability.
- * The types have a defined length in the standard and should not change.
  */
 
 // functions are not exported by default
-export func add(x: int, y: int): int {
-	return x + y;
+export func mul(x: int, y: int): int {
+	return x * y;
 }
 
 // defining an external function
@@ -63,9 +68,9 @@ extern func memset(dest: any[], c: int, count: ulong) any[];
 // structs (are not C structs if extern specifier is not used)
 struct String {
 	// str is public
-	export var str: *char[];
-	var len: ulong;
-	var size: ulong;
+	export var str: []char;
+	var len: u64;
+	var size: u64;
 }
 
 // struct methods
@@ -74,9 +79,9 @@ export func String.init(s: char[]): String {
 		s = mem.alloc(24, char);
 		return : String = {s, 0, 24};
 	}
-	var len: ulong = str.len(s);
-	var size: ulong = (len & (24 - 1)) + 24;
-	var dest: *char[] = mem.alloc(size, char);
+	var len: u64 = str.len(s);
+	var size: u64 = (len & (24 - 1)) + 24;
+	var dest: []char = mem.alloc(size, char);
 
 	// sneaky C function
 	memset(dest, 0, size); 
@@ -96,29 +101,30 @@ export func String.cmp(self: String, other: String): int {
 	var r: int = 0;
 	
 	// regular C style for loop (while and do while loops work as expected too)
-	for (var i := 0; (self[i] != '\0') || (other[i] != '\0'); i++) {
-		if ( r = self[i] - other[i]) return r;
+	for (var i := 0; (self.str[i] != '\0') || (other.str[i] != '\0'); i++) {
+		if ( r = self.str[i] - other.str[i]) return r;
 	}
 	return -1;
 }
 
 // const functions are for functions that do not need to be evaluated at runtime
 // a.k.a no side effects
-export const func String.data(self: String, i: ulong) char[] {
+export const func String.data(self: String, i: u64) []char {
 	return self.str;
 }
 
 // any is a generic type for any kind of type (the type of a struct is its name)
 // @typeof( any(String) ) == String
+// the any type must be able to be known at compile time
 
-// @sizeof(any) will give the size of the kind of type it refers to
+// @sizeof(any) will give the size of the kind of type it refers to.
 export struct Union {
 	var u: any;
 }
 
 // A struct method wihtout a name is a convertion function
 // There is no constructor or destrcutor. Use .init and .destroy if the struct needs to be destroyed after use
-export func Union.(u: const any): Union {
+export const func Union.(u: const type): Union {
 	return: Union = { u };
 }
 
