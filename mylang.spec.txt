@@ -1,6 +1,6 @@
 
 /* Compiler directives start with an '@' symbol */
-const str: any = @import("string");
+const str := @import("string");
 const io := @import("io");
 const mem := @import("memory");
 const int_size: ulong = @sizeof(int);
@@ -17,7 +17,8 @@ func main(void): int {
 	return 0;
 }
 
-// dual return values
+// dual return values 
+// (gets compiled into return values in a0 and a1 on riscv for example)
 func add2to2(x: i32, y: i32): i32, i32 {
 	x += 2;
 	y += 2;
@@ -42,8 +43,6 @@ func add2to2(x: i32, y: i32): i32, i32 {
  * char  // alias for u8
  * int   // alias for i32
  * uint  // alias for u32
- * long  // alias for i64
- * ulong // alias for u64
  *
  * uintptr // a type big enough to hold a pointer
  *
