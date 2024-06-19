@@ -1,12 +1,50 @@
+#include <stddef.h>
 
-#include "tokenizer.h"
+#include <stdio.h>
 
-int get_precedence(const Token *token) {
-	enum TokenType t = token->type;
-	if (t > __multiplicative_start & t < __multiplicative_end) return 0;
-	if (t > __additive_start & t < __additive_end) return 1;
-	if (t > __assign_start & t < __assign_end) return 2;
-	if (t > __shift_start & t < __shift_end) return 3;
+#include "file.h"
+#include "scanner.h"
 
-	return -1;
+struct Parser {
+	struct File *file;
+	struct Scanner scanner;
+
+	struct Token nextToken;
+};
+
+enum ParserError {
+	ParserSuccess = 0,
+	ParserScannerError = -1,
+	ParserFileLoadError = -2,
+	ParserParseError = -3,
+};
+
+enum ParserError ParserInit(struct Parser *parser, const char *filename) {
+	struct File *file = FileOpen(filename);
+	if (file == NULL) {
+		return ParserFileLoadError;
+	}
+	
+	if (ScannerInit(&parser->scanner, FileGetSize(file), FileGetData(file)) != ScannerSuccess) {
+		FileClose(file);
+		return ParserScannerError;
+	}
+
+	if (ScannerScanNext(&parser->scanner, &parser->nextToken) != ScannerSuccess) {
+		fprintf(stderr, "Probably not a [Unknown Language] file!\n");
+		FileClose(file);
+		return ParserScannerError;
+	}
+
+	parser->file = file;
+	
+	return ParserSuccess;
 }
+
+void ParserDestroy(struct Parser *parser) {
+	ScannerDestroy(&parser->scanner);
+	FileClose(parser->file);
+}
+
+
+

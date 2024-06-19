@@ -4,42 +4,32 @@
 #include <stddef.h>
 #include <stdint.h>
 
-/*
- * The AST is stored as a flattened tree in memory.
- * All strings are stored as null terminated strings.
- */
+#include "arena.h"
+#include "token.h"
 
 enum AstNodeType {
-	AST_END,
-	AST_DEF,
-	AST_EXPR,
-}
+	AstEnd,
+	AstExpression,
+	AstDefiniton,
+	AstIdentifier,
+};
 
-typedef struct AstHead {
-	uint32_t size; // size of the entire tree
-	uint32_t nodeOff; // offset of the first node from the beginning
-	
-	// name of the file as null terninated string aligned to 4 byte boundry
-	char     filename[]; 
-} AstHead;
+/*
+ * The Ast is stored as a packed linear tree
+ * This makes it easy to put it into a binary file
+ */
 
-typedef struct AstIdNode{
-	uint32_t assignTypeOff; 
-	char     name[];
-}
+struct AstToken {
+	uint32_t type;
+	uint32_t litSize; // size of the literal
+	char lit[]; // token literal (should be padded to the next 32 bits)
+};
 
-typedef struct AstExpressionNode {
-	uint32_t exprType;
-	uint32_t rhsOff;
-	// lhs comes rigth after
-}
+struct AstNode {
+	uint32_t nodeType;
+	uint32_t nextNode; // Index to the next node (this could be far away)
+	struct AstToken token;
+};
 
-typedef struct AstNode {
-	uint32_t  type; // type of node
-	uint32_t size; // size of the node, including everything nested inside it
-	union {
-		AstExpressionNode expr;
-	};
-} AstNode;
 
 #endif /* AST_H */

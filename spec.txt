@@ -1,0 +1,98 @@
+
+[Unknown Language] Informal Specifications
+
+Identifiers:
+
+An identifier is defined as a sequence of digits, underscores and uppercase and 
+lowercase letters in ASCII. A valid identifier must not begin with a digit.
+
+Identifiers that are defined as keywords can not be used for any other purpose.
+
+
+
+Variables and Types:
+
+Variables can be of the following types:
+
+i8    // signed 1 byte
+u8    // unsigned 1 byte
+i16   // signed 2 bytes
+u16   // unsigned 2 bytes
+i32   // signed 4 bytes
+u32   // unsigned 4 bytes
+i64   // signed 8 bytes
+u64   // unsigned 8 bytes
+i128  // signed 16 byte
+u128  // unsigned 16 byte
+
+bool  // true or false
+char  // alias for u8
+int   // alias for i32
+uint  // alias for u32
+long  // alias for i64
+ulong // alias for u64
+
+usize // biggest general purpose processor register
+uintptr // a type big enough to hold a pointer
+
+f32   // 32 bit floating point
+f64   // 64 bit floating point
+f128  // 128 bit floating point
+
+any  // any type (structs passed as pointers) (only useful in macros and or passing into other functions)
+type // the type of the value (used in function macros) 
+void // null, nothing, nada
+
+struct // C struct
+union // C union
+enum // C enum (Yes, I like the C)
+
+
+Operators:
+
++ addition
+++ pre- and post- increment
+- subtraction
+-- pre- and post decrement
+* multiplication and pointer dereference
+/ division
+% modulus
+& bitwise and
+| bitwise or
+^ bitwise exclusive or
+~ bitwise not
+. structure and union member access
+
+&& byte wise and
+|| byte wise or
+! byte wise not
+
+== equality
+!= not equality
+< less than
+> greater than
+<= less than or equal
+>= greater than or equal
+
+
+Slices:
+
+Slices are a length and array pair. They should be passed in and out of functions in
+registers if possible. An example of a slice would be ``const char name[] = "Bob";``. 
+This variable would be evaluated at compile time as having the length of 3 and the data of the string "Bob".
+
+
+To do:
+	slices (length and data pair)
+	multiple data pointer
+	pointers
+	literals
+	functions
+	structures
+	unions
+	interfaces
+	enums (C enums)
+	keywords
+	compiler directives
+	C interoperability
+

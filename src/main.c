@@ -1,34 +1,54 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
-#include "tokenizer.h"
+#include "file.h"
+#include "scanner.h"
+#include "token.h"
+
+void printToken(char *file, struct Token *token) {
+	printf("type: %s, pos: %ld, prec: %d lit: ", 
+			TokenGetStringRep(token), token->pos, TokenGetPrecedence(token)
+		  );
+	fwrite(file + token->pos, sizeof(char), token->len, stdout);
+	puts("");
+}
 
 int main(int argc, char *const *argv) {
+	struct File *file;
+	struct Scanner scanner;
+	struct Token token = {0};
+
 	if (argc != 2) {
-		fprintf(stderr,"%s: [file]\n", argv[0]);
+		fprintf(stderr, "%s [file]\n", argv[0]);
 		return 1;
 	}
 
-	Filebuff *fb = tokenizer_init(argv[1]);
-	if (fb == NULL) {
-		fprintf(stderr, "Could not read %s\n", argv[1]);
+	file = FileOpen(argv[1]);
+	if (file == NULL) {
+		return 1;
+	}
+
+	if (ScannerInit(&scanner, FileGetSize(file), FileGetData(file)) != ScannerSuccess) {
 		return 1;
 	}
 	
-	while (1) {
-		Token token = next_token(fb);
-		if (token.type == _EOF) {
-			break;
+	while (token.type != EOF_TOKEN) {
+		ScannerScanNext(&scanner, &token);
+		if (scanner.err != NULL) {
+			printf("pos %lu: '%c' %s\n", 
+					token.pos, FileGetData(file)[token.pos], scanner.err);
 		}
-		if (token.str == NULL) continue;
-
-		fwrite(token.str, sizeof(char), token.len, stdout);
-		printf("<\ntype: %d, len: %ld, pos: %ld\n", 
-				token.type, token.len, token.pos);
+		else {
+			printToken(FileGetData(file), &token);
+		}
 	}
-	
-	tokenizer_free(fb);
-	
+
+	ScannerDestroy(&scanner);
+
+	FileClose(file);
+
 	return 0;
 }
+
 

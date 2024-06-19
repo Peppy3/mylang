@@ -1,0 +1,18 @@
+
+// Main function
+int main(int argc, char **argv) {
+	int exit_code1 = 10 + 8;
+	int exit_code2 = 5 - 5;
+	
+	/* If exit_code1 is not zero, retrun exit_code1.
+	 * Else, return exit_code1
+	 */
+	if (exit_code1 != 0) {
+		return exit_code1;
+	}
+	else {
+		return exit_code2;
+	}
+}
+
+

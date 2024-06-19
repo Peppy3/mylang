@@ -1,1 +1,3 @@
 .vscode/**
+buildcache/**
+__pycache__/**

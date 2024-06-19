@@ -1,0 +1,12 @@
+
+struct list(T) {
+	size_t len;
+	T *data;
+
+	export T *getData(list l) {
+		return l.data;
+	}
+
+};
+
+

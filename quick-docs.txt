@@ -1,0 +1,144 @@
+
+/* Compiler directives start with an '@' symbol */
+@import("string");
+@import("io");
+@import("memory");
+
+const ulong int_size = sizeof(int);
+@warn("This is a warning");
+
+@assert(true, "This is surely a true statement (get it? the statement is 'true')" );
+
+// Basic Hello World program
+// argv is a pointer to an array of pointers to char 
+int main(void) {
+	// arrays are not bounds checked, string literals ends in a null character ( '\0' )
+	const char[] hii = "Hello, World!";
+	io.puts(hii);
+	return 0;
+}
+
+// dual return values 
+// (gets compiled into return values in a0 and a1 on riscv for example)
+(int, int) add2totwo(int x, int y) {
+	return x += 2, y += 2;
+}
+
+/*
+ * Regular types
+ * 
+ * i8    // signed 1 byte
+ * u8    // unsigned 1 byte
+ * i16   // signed 2 bytes
+ * u16   // unsigned 2 bytes
+ * i32   // signed 4 bytes
+ * u32   // unsigned 4 bytes
+ * i64   // signed 8 bytes
+ * u64   // unsigned 8 bytes
+ * i128  // signed 16 byte
+ * u128  // unsigned 16 byte
+ * 
+ * bool  // true or false
+ * char  // alias for u8
+ * int   // alias for i32
+ * uint  // alias for u32
+ * long  // alias for i64
+ * ulong // alias for u64
+ * 
+ * usize // biggest general purpose processor register
+ * uintptr // a type big enough to hold a pointer
+ *
+ * f32   // 32 bit floating point
+ * f64   // 64 bit floating point
+ * f128  // 128 bit floating point
+ * 
+ * any  // any type (structs passed as pointers)
+ * type // the type of the value (used in function macros) 
+ * void // null, nothing, nada
+ * 
+ */
+
+// functions are not exported by default
+export int mul(int x, int y) {
+	return x * y;
+}
+
+// defining an external function
+extern void *memset(void *data, int c);
+
+// structs (are not C structs if extern specifier is not used)
+struct String {
+	// str is public
+	export char str[];
+	var u64 size;
+}
+
+// struct methods
+export String String.init(char s[]) {
+	if (s == nil) {
+		s = mem.alloc(24, sizeof(char));
+		return : String = {s, 0, 24};
+	}
+	u64 len = str.len(s);
+	u64 size = (len & (24 - 1)) + 24;
+	char dest[] = mem.alloc(size, char);
+
+	// sneaky C function
+	memset(dest, 0, size); 
+
+	mem.copy(dest, s, len);
+
+	// return and denote that this is a String
+	return (String){.str = dest, .len = len, .size = size};
+}
+
+// will always return nil, no matter what (can only do this with constants
+export nil String.destroy(s: String) {
+	mem.free(s.str);
+}
+
+export int String.cmp(String self, String other) {
+	ing r = 0;
+	
+	// regular C style for loop (while and do while loops work as expected too)
+	for (size_t i = 0; (self.str[i] != '\0') || (other.str[i] != '\0'); i++) {
+		if (r = self.str[i] - other.str[i]) return r;
+	}
+	return 0;
+}
+
+// const functions are for functions that do not need to be evaluated at runtime
+// a.k.a no side effects
+export char[] String.data(String self, u64 i) {
+	return self.str;
+}
+
+export struct Optional {
+	var u: any;
+}
+
+// A struct method wihtout a name is a convertion function
+// There is no constructor or destrcutor. Use .init and .destroy if the struct needs to be destroyed after use
+export const Optional Optional.init(any u) {
+	return (Union){u};
+}
+
+export any Optional.unpack(Optional self) {
+	@assert(self.hasValue());
+	return self.u;
+}
+
+// type casts  ( this is not a good implementation of Union.hasValue() )
+export bool Optional.hasValue(Optional self) {
+	return bool(self.u);
+}
+
+// if any struct complies with an interface, it can be used with it
+interface file {
+    // reads size bytes from the file returns a pointer to dst
+    func any *read(any self, any *dst, ulong size);
+
+    // writes size bytes from src to the file
+    func FileError write(any self, any *buff, ulong size);
+}
+
