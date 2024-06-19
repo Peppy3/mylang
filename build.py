@@ -24,12 +24,11 @@ PROGRAM_NAME = "mylang"
 
 LINK_LIBS: list = ["-lc"]
 
-SOURCE_DIR = "src"
+SOURCE_DIRS = ("src", )
 CACHE_DIR = "buildcache"
 
 HOOK_FILES: tuple | None = None
 
-DEFAULT_SOURCE_DIR = Path(__file__).parent / Path(SOURCE_DIR)
 DEFAULT_CACHE_DIR = Path(__file__).parent / Path(CACHE_DIR)
 
 C_COMPILER: str = "cc"
@@ -298,11 +297,6 @@ def main():
     args = parse_args()
     cache_file = args.cache_dir / Path("file_cache.json")
 
-    if HOOK_FILES is not None:
-        for hook_file in HOOK_FILES:
-            with open(hook_file, "r") as f:
-                exec(compile(f.read(), hook_file, "exec"), {"build_hooks": build_hooks})
-
     if not args.cache_dir.exists():
         print(f"Making directory: {args.cache_dir}")
         args.cache_dir.mkdir()
@@ -310,13 +304,10 @@ def main():
     cwd = Path.cwd()
     sources = list()
 
-    for path in args.src_dirs:
+    for path in map(lambda s: Path(s), SOURCE_DIRS):
         if not path.exists():
             raise FileNotFoundError(f"{str(path)} does not exsist")
-        
-        sources.extend(
-            map(lambda s: s.relative_to(cwd), get_sources(path))
-            )
+        sources.extend(get_sources(path))
 
     for func in build_hooks.pre_hooks:
         func(list(sources))
