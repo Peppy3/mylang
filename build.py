@@ -32,7 +32,7 @@ HOOK_FILES: tuple | None = None
 DEFAULT_CACHE_DIR = Path(__file__).parent / Path(CACHE_DIR)
 
 C_COMPILER: str = "cc"
-CFLAGS: tuple | None = ("-Wall", "-Wextra", "-Wpedantic", "-Wvla")
+CFLAGS: tuple | None = ("-Wall", "-Wextra", "-Wpedantic")
 COPT: str = "-O2 -g3" # I never recommend using -O0
 
 CPPFLAGS: tuple | None = None # The standard cpp hook uses the c flags as well

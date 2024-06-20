@@ -13,8 +13,8 @@ struct Scanner {
 	int ch;
 	int nextCh;
 
-	size_t pos;
-	size_t lineOffset; // current line offset
+	char *pos;
+	char *lineOffset; // current line offset
 	
 	char *err;
 };
@@ -23,7 +23,6 @@ enum ScannerError {
 	ScannerSuccess = 0,
 	ScannerTokenError = -1,
 	ScannerCodeTooSmallError = -2,
-	ScannerAllocError = -3,
 };
 
 enum ScannerError ScannerInit(struct Scanner *scanner, size_t code_size, char *code);

@@ -9,13 +9,13 @@
 #endif
 
 #define X(name) #name,
-static char *TokenStrings[] = {
+static const char *TokenStrings[] = {
 TOKEN_LIST_MACRO
 	NULL
 };
 #undef X
 
-char *TokenGetStringRep(struct Token *token) {
+const char *TokenGetStringRep(struct Token *token) {
 	enum TokenType type = token->type;
 	if (type >= TokenTypeCount) {
 		return "Token type out of range";

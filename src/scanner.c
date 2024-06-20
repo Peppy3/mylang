@@ -6,6 +6,7 @@
 #include <stdio.h>
 
 #include "token.h"
+#include "keywords.h"
 
 #include "scanner.h"
 
@@ -21,7 +22,7 @@ enum ScannerError ScannerInit(struct Scanner *scanner, size_t code_size, char *c
 		.code = code,
 		.ch = code[0],
 		.nextCh = code[1],
-		.pos = 0,
+		.pos = code,
 		.lineOffset = 0,
 		.err = NULL
 	};
@@ -49,28 +50,27 @@ bool isTerminating(int ch) {
 // iterates to the next character
 int ScannerNextChar(struct Scanner *scanner) {
 	int ch = scanner->ch;
-	size_t next_pos = scanner->pos + 1;
+	char *next_pos = scanner->pos + 1;
 
 	if (ch == '\n') {
 		scanner->lineOffset = next_pos;
 	}
 	
-	ch = scanner->nextCh;
-	scanner->ch = ch;
+	scanner->ch = scanner->nextCh;
 
-	if (scanner->codeSize <= next_pos) {
+	if (scanner->code + scanner->codeSize <= next_pos) {
 		scanner->nextCh = EOF;
 	}
 	else {
-		scanner->nextCh = (char)(scanner->code[next_pos + 1] & 0xff);
+		scanner->nextCh = (char)(*(next_pos + 1) & 0xff);
 		scanner->pos = next_pos;
 	}
 
 	return scanner->ch;
 }
 
-long scannerTokenOffset(struct Scanner *scanner) {
-	return scanner->pos;
+size_t scannerTokenOffset(struct Scanner *scanner) {
+	return (size_t)(scanner->code - scanner->pos);
 }
 
 void ScannerSkipWhiteSpace(struct Scanner *scanner) {
@@ -240,7 +240,14 @@ enum ScannerError ScannerScanNext(struct Scanner *scanner, struct Token *token) 
 		if (error == ScannerTokenError) {
 			token->type = INVALID;
 		}
-		token->type = IDENTIFIER;
+		else {
+			if (KeywordLookup(token->pos, scanner->pos - token->pos) != NULL) {
+				token->type = KEYWORD;
+			}
+			else {
+				token->type = IDENTIFIER;
+			}
+		}
 	}
 	else if (isdigit(ch)) {
 		error = scanNumber(scanner);
@@ -306,6 +313,11 @@ enum ScannerError ScannerScanNext(struct Scanner *scanner, struct Token *token) 
 					ScannerNextChar(scanner);
 					token->type = QUESTION_MARK;
 				} break;
+			case '@': 
+				{
+					ScannerNextChar(scanner);
+					token->type = AT_SYMBOL;
+				} break;
 			case '\'': 
 				{
 					error = scanChar(scanner);
@@ -352,27 +364,28 @@ enum ScannerError ScannerScanNext(struct Scanner *scanner, struct Token *token) 
 				} break;
 			case '*': 
 				{
+					ScannerNextChar(scanner);
 					if (scanner->ch == '=') {
 						ScannerNextChar(scanner);
 						token->type = ASSIGN_ASTERISK;
 					}
 					else {
-						ScannerNextChar(scanner);
 						token->type = ASTERISK;
 					}
 				} break;
 			case '/': 
 				{
-					if (scanner->nextCh == '/') {
-						error = scanLine(scanner);
-						if (error == ScannerTokenError) {
-							token->type = INVALID;
-						}
+					ScannerNextChar(scanner);
+					if (scanner->ch == '/') {
+						scanLine(scanner);
+						token->type = LINE_COMMENT;
 					}
-					else if (scanner->nextCh == '*') {
+					else if (scanner->ch == '*') {
 						error = scanMultilineComment(scanner);
 						if (error == ScannerTokenError) {
 							token->type = INVALID;
+						} else {
+							token->type = MULTILINE_COMMENT;
 						}
 					}
 					else if (scanner->ch == '=') {
@@ -380,40 +393,39 @@ enum ScannerError ScannerScanNext(struct Scanner *scanner, struct Token *token) 
 						token->type = ASSIGN_DIVITION;
 					}
 					else {
-						ScannerNextChar(scanner);
 						token->type = DIVITION;
 					}
 				} break;
 			case '%': 
 				{
+					ScannerNextChar(scanner);
 					if (scanner->ch == '=') {
 						ScannerNextChar(scanner);
 						token->type = ASSIGN_MODULUS;
 					}
 					else {
-						ScannerNextChar(scanner);
 						token->type = MODULUS;
 					}
 				} break;
 			case '~': 
 				{
+					ScannerNextChar(scanner);
 					if (scanner->ch == '=') {
 						ScannerNextChar(scanner);
 						token->type = ASSIGN_LOGICAL_NOT;
 					}
 					else {
-						ScannerNextChar(scanner);
 						token->type = LOGICAL_NOT;
 					}
 				} break;
 			case '^': 
 				{
+					ScannerNextChar(scanner);
 					if (scanner->ch == '=') {
 						ScannerNextChar(scanner);
 						token->type = ASSIGN_EXCLUSIVE_OR;
 					}
 					else {
-						ScannerNextChar(scanner);
 						token->type = EXCLUSIVE_OR;
 					}
 				} break;
@@ -507,7 +519,12 @@ enum ScannerError ScannerScanNext(struct Scanner *scanner, struct Token *token) 
 				}
 		}
 	}
+
 	token->len = scanner->pos - token->pos;
+	if (KeywordLookup(token->pos, token->len) != NULL) {
+		token->type = KEYWORD;
+	}
+
 	return error;
 }
 

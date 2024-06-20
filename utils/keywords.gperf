@@ -1,0 +1,39 @@
+%compare-strncmp
+%null-strings
+
+%define hash-function-name KeywordHash
+%define lookup-function-name KeywordLookup
+
+%{
+
+#include <stddef.h>
+#include <string.h>
+
+%}
+
+%%
+if
+else
+switch
+case
+default
+while
+do
+for
+continue
+break
+const
+extern
+static
+inline
+return
+struct
+union
+enum
+import
+export
+null
+true
+false
+%%
+

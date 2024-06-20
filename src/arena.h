@@ -5,41 +5,44 @@
 #include <stdint.h>
 #include <assert.h>
 
-struct ArenaVector {
+struct Arena {
 	size_t cap;
-	size_t allocated;
+	size_t size;
 	void *pool;
 };
 
 typedef ssize_t arena_index;
 
-enum ArenaVectorError {
+enum ArenaError {
 	ArenaSuccess = 0,
 	ArenaAllocError = -1,
 };
 
-enum ArenaVectorError ArenaVectorInit(struct ArenaVector *arena);
+enum ArenaError ArenaInit(struct Arena *arena);
 
-void ArenaVectorDestroy(struct ArenaVector *arena);
+void ArenaDestroy(struct Arena *arena);
 
 // If this funciton returns a negative number then,
 // it does not mean that the arena is deallocated
-arena_index ArenaVectorAlloc(struct ArenaVector *arena, size_t size);
+arena_index ArenaAlloc(struct Arena *arena, size_t size);
 
-static inline void *ArenaVectorGetObject(struct ArenaVector arena, arena_index idx) {
-	assert(idx >= 0 && arena.allocated >= (size_t)idx);
+enum ArenaError ArenaWrite(struct Arena *arena, size_t size, const void *buff);
+
+
+static inline void *ArenaGetObject(struct Arena arena, arena_index idx) {
+	assert(idx >= 0 && arena.size >= (size_t)idx);
 	return ((uint8_t *)arena.pool) + idx;
 }
 
-static inline size_t ArenaVectorGetCap(struct ArenaVector arena) {
+static inline size_t ArenaGetCap(struct Arena arena) {
 	return arena.cap;
 }
 
-static inline size_t ArenaVectorGetAllocated(struct ArenaVector arena) {
-	return arena.allocated;
+static inline size_t ArenaGetSize(struct Arena arena) {
+	return arena.size;
 }
 
-static inline void *ArenaVectorGetData(struct ArenaVector arena) {
+static inline void *ArenaGetData(struct Arena arena) {
 	return arena.pool;
 }
 

@@ -2,8 +2,8 @@
 #define TOKENIZER_H
 
 #define TOKEN_LIST_MACRO \
-	X(INVALID)\
 	X(EOF_TOKEN)\
+	X(INVALID)\
 	\
 	X(MULTILINE_COMMENT)\
 	X(LINE_COMMENT)\
@@ -43,6 +43,7 @@
 	X(SEMICOLON)\
 	X(COLON)\
 	X(QUESTION_MARK)\
+	X(AT_SYMBOL)\
 	\
 	X(ASSIGN)\
 	\
@@ -67,6 +68,7 @@
 	X(RSQUARE)\
 	\
 	X(IDENTIFIER)\
+	X(KEYWORD)\
 	\
 	X(INT_LITERAL)\
 	X(HEX_LITERAL)\
@@ -81,14 +83,13 @@ TOKEN_LIST_MACRO
 #undef X
 
 struct Token {
-	size_t pos;
+	char *pos;
 	size_t len;
 	enum TokenType type;
 };
 
-char *TokenGetStringRep(struct Token *token);
+const char *TokenGetStringRep(struct Token *token);
 
-// Not all token types are supported
 int TokenGetPrecedence(struct Token *token);
 
 #endif /* TOKENIZER_H */
