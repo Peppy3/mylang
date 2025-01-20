@@ -181,15 +181,14 @@ int is_assignment(ParserFile *file) {
 	.type = typ, \
 	.pos = begin_pos, \
 	.len = file->pos - begin_pos, \
-	.line_pos = *line_pos, \
 }
 
 // parses the next token
 // you might see some file->pos++ in here. but only when we are sure it's a valid char
-Token NextToken(ParserFile *file, size_t *line_pos) {
+Token NextToken(ParserFile *file) {
 	assert(file != NULL && "NextToken");
+	uint32_t begin_pos;
 	int ch;
-	size_t begin_pos;
 
 NextToken_continue:
 	begin_pos = file->pos;
@@ -197,10 +196,6 @@ NextToken_continue:
 
 	if (ch == EOF) {
 		return MAKE_TOKEN(TOKEN_eof);
-	}
-	else if (ch == '\n') {
-		*line_pos = file->pos;
-		goto NextToken_continue;
 	}
 	else if (isspace(ch)) {
 		goto NextToken_continue;

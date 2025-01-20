@@ -1,4 +1,5 @@
 .vscode/**
 buildcache/**
 __pycache__/**
+build/**
 mylang

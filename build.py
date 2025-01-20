@@ -389,6 +389,9 @@ def main():
 
     return linker.returncode
 
+print("Deprecated. Use cmake")
+exit(1)
+
 if __name__ == "__main__": exit(main())
 
 # Copyright (c) 2024 lindfors.freja@gmail.com

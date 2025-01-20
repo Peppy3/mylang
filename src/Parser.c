@@ -16,7 +16,6 @@
 
 typedef struct {
 	char *source_path;
-	size_t line_pos;
 	size_t num_errors;
 	ParserFile src;
 
@@ -34,9 +33,9 @@ typedef struct {
 #define EXPECT(type) parser_expect(this, type)
 #define AST_NODE_CONSTRUCT(handle) *Ast_GetNodeRef(&this->ast, handle) = (AstNode)
 
-size_t calc_line_num(const Parser *parser, const Token tok) {
+size_t calc_line_num(const Parser *parser, const Token *tok) {
 	size_t line_num = 1;
-	for (size_t i = 0; i < tok.pos; i++) {
+	for (size_t i = 0; i < tok->pos; i++) {
 		if (parser->src.data[i] == '\n') {
 			line_num++;
 		}
@@ -44,12 +43,23 @@ size_t calc_line_num(const Parser *parser, const Token tok) {
 	return line_num;
 }
 
+size_t calc_line_pos(const Parser *parser, const Token *tok) {
+	size_t line_pos = tok->pos;
+
+	while (parser->src.data[line_pos] != '\n') {
+		line_pos -= 1;
+	}
+
+	return line_pos + 1;
+}
+
 __attribute__((format (printf, 3, 4)))
 void parser_error(Parser *parser, Token *tok, const char *err_fmt, ...) {
 	const size_t TAB_LEN = 4;
 	parser->num_errors += 1;
-	size_t line_num = calc_line_num(parser, *tok);
-	size_t col_num = tok->pos - tok->line_pos;
+	size_t line_num = calc_line_num(parser, tok);
+	size_t line_pos = calc_line_pos(parser, tok);
+	size_t col_num = tok->pos - line_pos;
 	
 	fprintf(stderr, "%s:%lu:%lu ", parser->source_path,
 		line_num, col_num + 1);
@@ -59,10 +69,10 @@ void parser_error(Parser *parser, Token *tok, const char *err_fmt, ...) {
 	vfprintf(stderr, err_fmt, vargs);
 	va_end(vargs);
 
-	ParserFile_PrintLine(parser->src, tok->line_pos, TAB_LEN, stderr);
+	ParserFile_PrintLine(parser->src, line_pos, TAB_LEN, stderr);
 
-	// FIXME: fix tab spacing (i know it's broken)
-	for (size_t i = tok->line_pos; i < (tok->line_pos + col_num); i++) {
+	// FIXME: tab spacing (i know it's broken)
+	for (size_t i = line_pos; i < (line_pos + col_num); i++) {
 		if (parser->src.data[i] == '\t') {
 			for (size_t j = 0; j < TAB_LEN; j++) {
 				fputc(' ', stderr);
@@ -79,7 +89,7 @@ void parser_error(Parser *parser, Token *tok, const char *err_fmt, ...) {
 Token parser_next(Parser *parser) {
 	parser->prev_token = parser->curr_token;
 	parser->curr_token = parser->lookahead;
-	parser->lookahead = NextToken(&parser->src, &parser->line_pos);
+	parser->lookahead = NextToken(&parser->src);
 	return parser->prev_token;
 }
 
@@ -93,7 +103,7 @@ bool parser_expect(Parser *parser, enum TokenType expected_type) {
 	}
 
 	parser->curr_token = parser->lookahead;
-	parser->lookahead = NextToken(&parser->src, &parser->line_pos);
+	parser->lookahead = NextToken(&parser->src);
 
 	return true;
 }
@@ -221,7 +231,6 @@ int parse(char *source_path) {
 	assert(source_path != NULL);
 	Parser parser = {
 		.source_path = source_path,
-		.line_pos = 0,
 		.num_errors = 0,
 	};
 
@@ -233,8 +242,8 @@ int parse(char *source_path) {
 		return -1;
 	}
 	
-	parser.curr_token = NextToken(&parser.src, &parser.line_pos);
-	parser.lookahead = NextToken(&parser.src, &parser.line_pos);
+	parser.curr_token = NextToken(&parser.src);
+	parser.lookahead = NextToken(&parser.src);
 	
 	AstNodeHandle list_back = AST_INVALID_HANDLE;
 	while (parser.curr_token.type != TOKEN_eof) {

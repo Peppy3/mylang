@@ -10,7 +10,6 @@
 
 int main(int argc, char *const *argv) {
 	ParserFile file;
-	size_t line_pos = 0;
 
 	if (argc != 2) {
 		fprintf(stderr, "%s [file]\n", argv[0]);
@@ -22,10 +21,10 @@ int main(int argc, char *const *argv) {
 		return 1;
 	}
 
-	Token tok = NextToken(&file, &line_pos);
+	Token tok = NextToken(&file);
 	while (tok.type != TOKEN_eof) {
 		print_token(stdout, &file, &tok);
-		tok = NextToken(&file, &line_pos);
+		tok = NextToken(&file);
 	}
 	
 	ParserFile_Close(file);

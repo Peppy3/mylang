@@ -18,7 +18,6 @@ typedef struct {
 		uint32_t len: 24;
 	};
 	uint32_t pos;
-	uint32_t line_pos; // the position of the previous newline
 } Token;
 
 static inline bool Token_is_type_specifier(const Token tok) {
