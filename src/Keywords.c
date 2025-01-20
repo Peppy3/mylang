@@ -1,6 +1,6 @@
 /* ANSI-C code produced by gperf version 3.1 */
-/* Command-line: gperf utils/keywords.gperf  */
-/* Computed positions: -k'2-3' */
+/* Command-line: gperf ../utils/keywords.gperf  */
+/* Computed positions: -k'1,3' */
 
 #if !((' ' == 32) && ('!' == 33) && ('"' == 34) && ('#' == 35) \
       && ('%' == 37) && ('&' == 38) && ('\'' == 39) && ('(' == 40) \
@@ -29,14 +29,19 @@
 #error "gperf generated tables don't work with this execution character set. Please report a bug to <bug-gperf@gnu.org>."
 #endif
 
-#line 7 "utils/keywords.gperf"
+#line 9 "../utils/keywords.gperf"
 
 
 #include <stddef.h>
 #include <string.h>
+#include "Token.h"
 
+#include "Keywords.h"
 
-#define TOTAL_KEYWORDS 23
+#line 19 "../utils/keywords.gperf"
+struct KeywordResult;
+
+#define TOTAL_KEYWORDS 29
 #define MIN_WORD_LENGTH 2
 #define MAX_WORD_LENGTH 8
 #define MIN_HASH_VALUE 2
@@ -64,10 +69,10 @@ KeywordHash (register const char *str, register size_t len)
       42, 42, 42, 42, 42, 42, 42, 42, 42, 42,
       42, 42, 42, 42, 42, 42, 42, 42, 42, 42,
       42, 42, 42, 42, 42, 42, 42, 42, 42, 42,
-      42, 42, 42, 42, 42, 42, 42, 15, 42, 42,
-      42,  0,  5, 42, 10,  5, 42, 42,  5, 25,
-       0,  0, 10, 42, 10, 10,  0,  0, 42, 20,
-      20, 42, 42, 42, 42, 42, 42, 42, 42, 42,
+      42, 42, 42, 42, 42, 42, 42,  0, 25, 20,
+       0, 10, 10, 42, 42,  5, 42, 42,  5, 42,
+       0, 10, 10, 42, 20, 10, 15,  0, 42,  5,
+      42, 42, 42, 42, 42, 42, 42, 42, 42, 42,
       42, 42, 42, 42, 42, 42, 42, 42, 42, 42,
       42, 42, 42, 42, 42, 42, 42, 42, 42, 42,
       42, 42, 42, 42, 42, 42, 42, 42, 42, 42,
@@ -90,48 +95,86 @@ KeywordHash (register const char *str, register size_t len)
         hval += asso_values[(unsigned char)str[2]];
       /*FALLTHROUGH*/
       case 2:
-        hval += asso_values[(unsigned char)str[1]];
+      case 1:
+        hval += asso_values[(unsigned char)str[0]];
         break;
     }
   return hval;
 }
 
-const char *
+struct KeywordResult *
 KeywordLookup (register const char *str, register size_t len)
 {
-  static const char * wordlist[] =
+  static struct KeywordResult wordlist[] =
     {
-      (char*)0, (char*)0,
-      "do",
-      (char*)0,
-      "enum",
-      "const",
-      "return",
-      "if",
-      "continue",
-      "null",
-      "union",
-      "inline",
-      "default",
-      "for",
-      "true",
-      "break",
-      "struct",
-      (char*)0, (char*)0,
-      "else",
-      "while",
-      "static",
-      (char*)0, (char*)0, (char*)0,
-      "false",
-      "extern",
-      (char*)0, (char*)0,
-      "case",
-      (char*)0,
-      "switch",
-      (char*)0, (char*)0, (char*)0, (char*)0,
-      "export",
-      (char*)0, (char*)0, (char*)0, (char*)0,
-      "import"
+      {(char*)0}, {(char*)0},
+#line 27 "../utils/keywords.gperf"
+      {"do",			TOKEN_do},
+#line 48 "../utils/keywords.gperf"
+      {"and",		TOKEN_bool_and},
+#line 46 "../utils/keywords.gperf"
+      {"uint",		TOKEN_uint},
+      {(char*)0}, {(char*)0},
+#line 21 "../utils/keywords.gperf"
+      {"if",			TOKEN_if},
+#line 35 "../utils/keywords.gperf"
+      {"lin",		TOKEN_lin},
+#line 41 "../utils/keywords.gperf"
+      {"null",		TOKEN_null},
+#line 38 "../utils/keywords.gperf"
+      {"union",		TOKEN_union},
+      {(char*)0},
+#line 49 "../utils/keywords.gperf"
+      {"or",			TOKEN_bool_or},
+#line 44 "../utils/keywords.gperf"
+      {"linkname",	TOKEN_linkname},
+#line 39 "../utils/keywords.gperf"
+      {"enum",		TOKEN_enum},
+#line 26 "../utils/keywords.gperf"
+      {"while",		TOKEN_while},
+#line 34 "../utils/keywords.gperf"
+      {"inline",		TOKEN_inline},
+#line 25 "../utils/keywords.gperf"
+      {"default",	TOKEN_default},
+#line 47 "../utils/keywords.gperf"
+      {"not",		TOKEN_bool_not},
+#line 42 "../utils/keywords.gperf"
+      {"true",		TOKEN_true},
+#line 43 "../utils/keywords.gperf"
+      {"false",		TOKEN_false},
+#line 23 "../utils/keywords.gperf"
+      {"switch",		TOKEN_switch},
+      {(char*)0},
+#line 45 "../utils/keywords.gperf"
+      {"int",		TOKEN_int},
+#line 22 "../utils/keywords.gperf"
+      {"else",		TOKEN_else},
+#line 31 "../utils/keywords.gperf"
+      {"const",		TOKEN_const},
+#line 40 "../utils/keywords.gperf"
+      {"export",		TOKEN_export},
+      {(char*)0},
+#line 29 "../utils/keywords.gperf"
+      {"continue",	TOKEN_continue},
+      {(char*)0}, {(char*)0},
+#line 32 "../utils/keywords.gperf"
+      {"extern",		TOKEN_extern},
+      {(char*)0},
+#line 28 "../utils/keywords.gperf"
+      {"for",		TOKEN_for},
+#line 24 "../utils/keywords.gperf"
+      {"case",		TOKEN_case},
+      {(char*)0},
+#line 37 "../utils/keywords.gperf"
+      {"struct",		TOKEN_struct},
+      {(char*)0},
+#line 33 "../utils/keywords.gperf"
+      {"pub",		TOKEN_pub},
+      {(char*)0},
+#line 30 "../utils/keywords.gperf"
+      {"break",		TOKEN_break},
+#line 36 "../utils/keywords.gperf"
+      {"return",		TOKEN_return}
     };
 
   if (len <= MAX_WORD_LENGTH && len >= MIN_WORD_LENGTH)
@@ -140,14 +183,14 @@ KeywordLookup (register const char *str, register size_t len)
 
       if (key <= MAX_HASH_VALUE)
         {
-          register const char *s = wordlist[key];
+          register const char *s = wordlist[key].name;
 
           if (s && *str == *s && !strncmp (str + 1, s + 1, len - 1) && s[len] == '\0')
-            return s;
+            return &wordlist[key];
         }
     }
   return 0;
 }
-#line 38 "utils/keywords.gperf"
+#line 50 "../utils/keywords.gperf"
 
 

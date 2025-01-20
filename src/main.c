@@ -2,61 +2,33 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "file.h"
-#include "scanner.h"
-#include "token.h"
-
-#include "parser.h"
-
-void printToken(struct Token *token) {
-	printf("type: %s, prec: %d lit: ", 
-			TokenGetStringRep(token), TokenGetPrecedence(token)
-		  );
-	fwrite(token->pos, sizeof(char), token->len, stdout);
-	puts("");
-}
+#include "util.h"
+#include "ParserFile.h"
+#include "Token.h"
+#include "Tokenizer.h"
+#include "Parser.h"
 
 int main(int argc, char *const *argv) {
-	struct File *file;
-	struct Scanner scanner;
-	struct Token token = {0};
-	//struct Parser parser;
+	ParserFile file;
+	size_t line_pos = 0;
 
 	if (argc != 2) {
 		fprintf(stderr, "%s [file]\n", argv[0]);
 		return 1;
 	}
+
 	
-	/*
-	if (ParserInit(&parser, argv[1], stdout) != ParserSuccess) {
-		return 1;
-	}
-	*/
-
-	file = FileOpen(argv[1]);
-	if (file == NULL) {
+	if (ParserFile_Open(&file, argv[1])) {
 		return 1;
 	}
 
-	if (ScannerInit(&scanner, FileGetSize(file), FileGetData(file)) != ScannerSuccess) {
-		return 1;
+	Token tok = NextToken(&file, &line_pos);
+	while (tok.type != TOKEN_eof) {
+		print_token(stdout, &file, &tok);
+		tok = NextToken(&file, &line_pos);
 	}
-
-	do {
-		ScannerScanNext(&scanner, &token);
-		if (scanner.err != NULL) {
-			printf("'%c' %s\n", *token.pos, scanner.err);
-		}
-		else {
-			printToken(&token);
-		}
-	} while (token.type != EOF_TOKEN);
-
-	ScannerDestroy(&scanner);
-
-	FileClose(file);
-
-	//ParserDestroy(&parser);
+	
+	ParserFile_Close(file);
 
 	return 0;
 }

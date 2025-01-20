@@ -1,6 +1,8 @@
 %compare-strncmp
 %null-strings
 
+%struct-type
+
 %define hash-function-name KeywordHash
 %define lookup-function-name KeywordLookup
 
@@ -8,32 +10,42 @@
 
 #include <stddef.h>
 #include <string.h>
+#include "Token.h"
+
+#include "Keywords.h"
 
 %}
 
+struct KeywordResult;
 %%
-if
-else
-switch
-case
-default
-while
-do
-for
-continue
-break
-const
-extern
-static
-inline
-return
-struct
-union
-enum
-import
-export
-null
-true
-false
+if,			TOKEN_if
+else,		TOKEN_else
+switch,		TOKEN_switch
+case,		TOKEN_case
+default,	TOKEN_default
+while,		TOKEN_while
+do,			TOKEN_do
+for,		TOKEN_for
+continue,	TOKEN_continue
+break,		TOKEN_break
+const,		TOKEN_const
+extern,		TOKEN_extern
+pub,		TOKEN_pub
+inline,		TOKEN_inline
+lin,		TOKEN_lin
+return,		TOKEN_return
+struct,		TOKEN_struct
+union,		TOKEN_union
+enum,		TOKEN_enum
+export,		TOKEN_export
+null,		TOKEN_null
+true,		TOKEN_true
+false,		TOKEN_false
+linkname,	TOKEN_linkname
+int,		TOKEN_int
+uint,		TOKEN_uint
+not,		TOKEN_bool_not
+and,		TOKEN_bool_and
+or,			TOKEN_bool_or
 %%
 

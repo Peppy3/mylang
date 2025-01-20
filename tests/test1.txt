@@ -1,18 +1,115 @@
 
-// Main function
-int main(int argc, char **argv) {
-	int exit_code1 = 10 + 8;
-	int exit_code2 = 5 - 5;
-	
-	/* If exit_code1 is not zero, retrun exit_code1.
-	 * Else, return exit_code1
-	 */
-	if (exit_code1 != 0) {
-		return exit_code1;
-	}
-	else {
-		return exit_code2;
-	}
-}
+==
+!=
+<
+>
+<=
+>=
 
+not
+and
+or
+
+++
+--
+
++
+-
+*
+/
+%
+
+~
+^
+&
+|
+
+<<
+>>
+
+.
+...
+->
+,
+
+;
+:
+@
+
+=
++=
+-=
+*=
+/=
+%=
+<<=
+>>=
+
+~=
+^=
+&=
+|=
+
+(
+)
+{
+}
+[
+]
+
+if
+else
+
+switch
+case
+default
+
+while
+do
+for
+continue
+break
+return
+
+pub
+const
+lin
+extern
+inline
+export
+linkname
+
+struct
+union
+enum
+
+null
+true
+false
+
+int
+uint
+
+foo
+69
+0x69
+0.001
+3.1415
+123.456e621
+'c' '\x40'
+"Hello\x40World!\n"
+
+// This is a single line comment
+/* 
+This is a 
+//multiline comment 
+*/
+/* 
+This is an 
+	/*
+		enclosed
+	*/ 
+multiline comment
+*/
+//aboba
 

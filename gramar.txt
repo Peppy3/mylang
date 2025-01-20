@@ -1,0 +1,24 @@
+
+[constant] = INT_LITERAL | HEX_LITERAL | FLOAT_LITERAL | STRING_LITERAL | CHAR_LITERAL
+[storage_class_specifier] = const | lin | pub | extern
+[type_specifier] = 
+	i8 | i16 | i32 | i64 | 
+	u8 | u16 | u32 | u64 |
+	f16 | f32 | f64 |
+	char | int | uint | type | void
+
+[primary_expr] = IDENTIFIER | [constant] | '(' > [expr] > ')'
+
+[postfix_expr] = [primary_expr] |
+	[postfix_expr] > 
+		'[' > [expr] > ']' |
+		'(' > [argument_expression_list] ')' |
+		'.' > IDENTIFIER |
+		"++" | "--"
+
+[unary_expr] = [postfix_expr] |
+	"++" | "--" | '+' | '-' | '*' | '&' | '!' | '~' > [unary_expr]
+
+[multiplicative_expr] = [unary_expr] | 
+
+

@@ -2,8 +2,10 @@
 1230324578
 '\0' 'a'
 '\x01b'
+'\x0a'
 '\b'
 "identifier"[];
 ("\"Hello World!\n\"")
+"\xde\xad\xbe\xef"
 {};
 
