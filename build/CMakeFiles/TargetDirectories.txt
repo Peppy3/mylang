@@ -1,5 +1,0 @@
-/home/admin/code/mylang/build/CMakeFiles/mylang.dir
-/home/admin/code/mylang/build/CMakeFiles/edit_cache.dir
-/home/admin/code/mylang/build/CMakeFiles/rebuild_cache.dir
-/home/admin/code/mylang/build/src/CMakeFiles/edit_cache.dir
-/home/admin/code/mylang/build/src/CMakeFiles/rebuild_cache.dir
