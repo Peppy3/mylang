@@ -15,14 +15,10 @@ Build dependencies:
 
 ### How to build
 
-A python build script is provided to build the compiler.
-Run the python file with your favourite python interpreter.
+Use cmake to configure and build the project
 
 	mkdir build && cd build
  	cmake .. -DCMAKE_BUILD_TYPE=Release
-
-There is some arguments you can pass to the build script
-please run the script with ``--help`` for more information
 
 
 ### Running the damn thing
