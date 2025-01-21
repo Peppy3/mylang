@@ -3,31 +3,29 @@
 #include <string.h>
 
 #include "util.h"
-#include "ParserFile.h"
-#include "Token.h"
-#include "Tokenizer.h"
+#include "ParserCtx.h"
+#include "Ast.h"
+#include "AstPrint.h"
 #include "Parser.h"
 
-int main(int argc, char *const *argv) {
-	ParserFile file;
+int main(int argc, char **argv) {
+	ParserCtx ctx = {0};
 
 	if (argc != 2) {
 		fprintf(stderr, "%s [file]\n", argv[0]);
 		return 1;
 	}
-
 	
-	if (ParserFile_Open(&file, argv[1])) {
+	if (ParserCtx_Setup(&ctx, argv[1])) {
 		return 1;
 	}
 
-	Token tok = NextToken(&file);
-	while (tok.type != TOKEN_eof) {
-		print_token(stdout, &file, &tok);
-		tok = NextToken(&file);
-	}
+	int num_errors = parse(&ctx);
+	printf("Number of parser errors: %d\n", num_errors);
+
+	Ast_PrettyPrint(&ctx, stdout);
 	
-	ParserFile_Close(file);
+	ParserCtx_Teardown(&ctx);
 
 	return 0;
 }

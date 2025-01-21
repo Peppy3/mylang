@@ -11,3 +11,4 @@
 Token NextToken(ParserFile *file);
 
 #endif /* SCANNER_H */
+

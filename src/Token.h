@@ -12,12 +12,14 @@ enum TokenType {
 };
 #undef X
 
+typedef int32_t TokenPos;
+
 typedef struct {
 	struct {
 		enum TokenType type: 8;
 		uint32_t len: 24;
 	};
-	uint32_t pos;
+	TokenPos pos;
 } Token;
 
 static inline bool Token_is_type_specifier(const Token tok) {

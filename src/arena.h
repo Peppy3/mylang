@@ -47,3 +47,4 @@ static inline void *ArenaGetData(struct Arena arena) {
 }
 
 #endif /* ARENA_H */
+

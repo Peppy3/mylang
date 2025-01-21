@@ -9,6 +9,6 @@
 void print_token(FILE *stream, ParserFile *src, Token *token) {
 	fprintf(stream, "%s: '", Token_GetStringRep(token->type));
 	fwrite(&src->data[token->pos], sizeof(char), token->len, stream);
-	fprintf(stream, "'\n");
+	fputc('\'', stream);
 }
 

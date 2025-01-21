@@ -1,4 +1,5 @@
 #include <stddef.h>
+#include <stdint.h>
 #include <assert.h>
 
 #include <stdlib.h>
@@ -27,6 +28,11 @@ int ParserFile_Open(ParserFile *file, const char *filename) {
 		return -1;
 	}
 
+	if (st.st_size > UINT32_MAX) {
+		fprintf(stderr, "%s: File can not be bigger than 4.3G\n", filename);
+		return -1;
+	}
+
 	file->size = st.st_size;
 	file->pos = 0;
 	
@@ -41,6 +47,22 @@ int ParserFile_Open(ParserFile *file, const char *filename) {
 		perror(filename);
 		return -1;
 	}
+
+	return 0;
+}
+
+int ParserFile_FromStr(ParserFile *file, char *str, uint32_t size) {
+	char *data = malloc(size);
+	if (data == NULL) {
+		return -1;
+	}
+	*file = (ParserFile){
+		.size = size,
+		.pos = 0,
+		.data = data,
+	};
+
+	memcpy(data, str, size);
 
 	return 0;
 }

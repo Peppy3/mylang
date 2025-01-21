@@ -3,6 +3,7 @@
 #include <stdbool.h>
 
 #include <ctype.h>
+#include <stdlib.h>
 #include <stdio.h>
 
 #include "Token.h"
@@ -393,4 +394,5 @@ NextToken_continue:
 	return MAKE_TOKEN(TOKEN_invalid);
 }
 #undef MAKE_TOKEN 
+
 
