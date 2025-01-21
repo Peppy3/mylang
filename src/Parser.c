@@ -112,9 +112,9 @@ PARSER_FUNC(statement_list) {
 	if (CURRENT.type != TOKEN_rcurly || CURRENT.type == TOKEN_eof) {
 		list_head = Ast_ListAppend(&this->ast, list_head);
 		AstNodeHandle curr = list_head;
-		while (CURRENT.type != TOKEN_rcurly || CURRENT.type == TOKEN_eof) {
+		for (;;) {
 			PARSE(statement);
-			if (CURRENT.type != TOKEN_rcurly || CURRENT.type == TOKEN_eof) {
+			if (CURRENT.type == TOKEN_rcurly || CURRENT.type == TOKEN_eof) {
 				break;
 			}
 			curr = Ast_ListAppend(&this->ast, curr);

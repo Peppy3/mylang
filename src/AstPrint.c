@@ -17,6 +17,7 @@ void Ast_PrettyPrint_internal(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
 	AstNode *node = Ast_GetNodeRef(&ctx->ast, handle);
 // I know this is kinda undebuggable but it's 
 // much better than having to miss printing something
+// Workaround is to break at the function you're interested in
 	switch (*node) {
 #define X(name)\
 		case AST_TYPE_##name: {\
@@ -58,11 +59,11 @@ void Ast_Print_List(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
 		if (ref[1] == AST_INVALID_HANDLE) {
 			break;
 		}
-
+		fprintf(fp, ",\n");
 		handle = ref[1];
 		ref = Ast_GetNodeRef(&ctx->ast, handle);
 	}
 
-	fprintf(fp, "}");
+	fprintf(fp, "\n}");
 }
 
