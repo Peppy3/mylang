@@ -30,6 +30,22 @@ static inline bool Token_is_literal(const Token tok) {
 	return TOKEN_LITERAL_START < tok.type && tok.type < TOKEN_LITERAL_END;
 }
 
+static inline bool Token_is_assignment(const Token tok) {
+	return TOKEN_ASSIGNMENT_START < tok.type && tok.type < TOKEN_ASSIGNMENT_END;
+}
+
+static inline bool Token_is_terminating(const Token tok) {
+	if (tok.type == TOKEN_comma
+		|| tok.type == TOKEN_colon
+		|| tok.type == TOKEN_semicolon
+		|| tok.type == TOKEN_rcurly
+		|| tok.type == TOKEN_lsquare
+		|| tok.type == TOKEN_eof) {
+		return true;
+	}
+	return false;
+}
+
 const char *Token_GetStringRep(enum TokenType type);
 
 #endif /* TOKEN_H_*/

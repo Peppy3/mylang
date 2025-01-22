@@ -39,7 +39,7 @@ AstNodeHandle Ast_AllocNode_(Ast *ast, uint32_t len) {
 		ast->data = new_data;
 	}
 	AstNodeHandle handle = ast->len;
-	ast->len += 1 + len;
+	ast->len += len;
 	return handle;
 } 
 
@@ -47,14 +47,14 @@ AstNodeHandle Ast_ListAppend(Ast *ast, AstNodeHandle back) {
 	AstNodeHandle next_handle = Ast_AllocNode(ast, AstList);
 
 	if (back != AST_INVALID_HANDLE) {
-		AstNode *back_ref = Ast_GetNodeRef(ast, back);
-		back_ref[1] = next_handle;
+		AstList *back_ref = (AstList*)Ast_GetNodeRef(ast, back);
+		back_ref->next = next_handle;
 	}
 	
-	AstNode *next_ref = Ast_GetNodeRef(ast, next_handle);
+	AstList *next_ref = (AstList*)Ast_GetNodeRef(ast, next_handle);
 
-	next_ref[0] = AST_TYPE_List;
-	next_ref[1] = AST_INVALID_HANDLE;
+	next_ref->type = AST_TYPE_List;
+	next_ref->next = AST_INVALID_HANDLE;
 	
 	return next_handle;
 }

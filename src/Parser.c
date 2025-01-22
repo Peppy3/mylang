@@ -14,8 +14,10 @@
 
 #include "Parser.h"
 
-#define PARSER_FUNC(name) static AstNodeHandle parse_##name(ParserCtx *this)
-#define PARSE(func) parse_##func(this)
+#define PARSER_FUNC(name, ...) \
+	static AstNodeHandle parse_##name(ParserCtx *this __VA_OPT__(,) __VA_ARGS__)
+
+#define PARSE(func, ...) parse_##func(this __VA_OPT__(,) __VA_ARGS__)
 #define ERROR(msg, ...) parser_error(this, msg __VA_OPT__(,) __VA_ARGS__)
 #define CURRENT (this->tokens.tokens[this->tokens.pos])
 #define NEXT() parser_next(this)
@@ -33,7 +35,7 @@ size_t calc_line_num(const ParserCtx *ctx, const Token *tok) {
 size_t calc_line_pos(const ParserCtx *ctx, const Token *tok) {
 	size_t line_pos = tok->pos;
 
-	while (ctx->src.data[line_pos] != '\n') {
+	while (line_pos > 0 && ctx->src.data[line_pos] != '\n') {
 		line_pos -= 1;
 	}
 
@@ -74,27 +76,112 @@ void parser_error(ParserCtx *this, const char *err_fmt, ...) {
 }
 
 // gives the idex of the token or -1 if it's the end of the list
-TokenPos parser_next(ParserCtx *ctx) {
-	return TokenStream_Iter(&ctx->tokens);
+TokenPos parser_next(ParserCtx *this) {
+	if (CURRENT.type == TOKEN_invalid) {
+		ERROR("Invalid token\n");
+	}
+	TokenPos pos = TokenStream_Iter(&this->tokens);
+	return pos;
 }
 
-PARSER_FUNC(statement) {
+PARSER_FUNC(expr);
+
+PARSER_FUNC(primary_expr) {
 	AstNodeHandle handle = AST_INVALID_HANDLE;
-	
-	if (CURRENT.type != TOKEN_integer) {
-		ERROR("I did not get an integer\n");
+
+	if (Token_is_literal(CURRENT) || CURRENT.type == TOKEN_identifier) {
+		TokenPos token_pos = NEXT();
+		handle = Ast_AllocNode(&this->ast, AstLiteral);
+		AstLiteral *ref = (AstLiteral*)Ast_GetNodeRef(&this->ast, handle);
+		ref->type = AST_TYPE_Literal;
+		ref->val = token_pos;
 		return handle;
 	}
 
-	TokenPos token = NEXT();
+	if (CURRENT.type != TOKEN_lparen) {
+		return AST_INVALID_HANDLE;
+	}
+	NEXT();
 
-	handle = Ast_AllocNode(&this->ast, AstLiteral);
-	AstNode *node = Ast_GetNodeRef(&this->ast, handle);
-	node[0] = AST_TYPE_Literal;
-	node[1] = token;
+	handle = PARSE(expr);
+
+	if (CURRENT.type != TOKEN_rparen) {
+		return AST_INVALID_HANDLE;
+	}
+	NEXT();
+
+	return handle;
+}
+
+PARSER_FUNC(postfix_expr, AstNodeHandle primary) {
+	if (primary == AST_INVALID_HANDLE) {
+		primary = PARSE(primary_expr);
+	}
+	
+	if (CURRENT.type == TOKEN_inc || CURRENT.type == TOKEN_dec) {
+		TokenPos op_pos = NEXT();
+		AstNodeHandle op_handle = Ast_AllocNode(&this->ast, AstPostOp);
+		AstPostOp *op = (AstPostOp*)Ast_GetNodeRef(&this->ast, op_handle);
+		*op = (AstPostOp){.type = AST_TYPE_PostOp, .op = op_pos, .val = primary};
+		
+		primary = PARSE(postfix_expr, op_handle);
+	}
+	
+	return primary;
+}
+
+PARSER_FUNC(assignment_expr) {
+	
+	AstNodeHandle lhs = PARSE(primary_expr);
+	if (!Token_is_assignment(CURRENT) || lhs == AST_INVALID_HANDLE) {
+		return lhs;
+	}
+
+	TokenPos assignment_pos = NEXT();
+
+	AstNodeHandle rhs = PARSE(postfix_expr, AST_INVALID_HANDLE);
+	
+	AstNodeHandle handle = Ast_AllocNode(&this->ast, AstBinOp);
+	AstBinOp *assign = (AstBinOp*)Ast_GetNodeRef(&this->ast, handle);
+	*assign = (AstBinOp) {
+		.type = AST_TYPE_BinOp,
+		.op = assignment_pos,
+		.lhs = lhs,
+		.rhs = rhs,
+	};
+
+	return handle;
+}
+
+PARSER_FUNC(expr) {
+	AstNodeHandle handle = PARSE(assignment_expr);
+
+	return handle;
+}
+
+PARSER_FUNC(statement) {
+	if (CURRENT.type == TOKEN_semicolon) {
+		NEXT();
+		AstNodeHandle none = Ast_AllocNode(&this->ast, AstNone);
+		AstNone *none_ref = (AstNone*)Ast_GetNodeRef(&this->ast, none);
+		none_ref->type = AST_TYPE_None;
+		return none;
+	}
+
+	AstNodeHandle handle = PARSE(expr);
+
+	if (handle == AST_INVALID_HANDLE) {
+		ERROR("Could not parse expression\n");
+		while (!Token_is_terminating(CURRENT)) {
+			NEXT();
+		}
+		NEXT();
+		return AST_INVALID_HANDLE;
+	}
 	
 	if (CURRENT.type != TOKEN_semicolon) {
 		ERROR("No semicolon at the end of statement\n");
+		NEXT();
 		return AST_INVALID_HANDLE;
 	}
 	NEXT();
@@ -104,6 +191,7 @@ PARSER_FUNC(statement) {
 
 PARSER_FUNC(statement_list) {
 	if (CURRENT.type != TOKEN_lcurly) {
+		ERROR("Unexpected %s Missing left curly brace\n", Token_GetStringRep(CURRENT.type));
 		return AST_INVALID_HANDLE;
 	}
 	NEXT();
@@ -111,23 +199,26 @@ PARSER_FUNC(statement_list) {
 	AstNodeHandle list_head = AST_INVALID_HANDLE;
 	if (CURRENT.type != TOKEN_rcurly || CURRENT.type == TOKEN_eof) {
 		list_head = Ast_ListAppend(&this->ast, list_head);
-		AstNodeHandle curr = list_head;
+		AstNodeHandle back = list_head;
 		for (;;) {
-			PARSE(statement);
+			AstNodeHandle stmt = PARSE(statement);
+			AstList *list_ref = (AstList*)Ast_GetNodeRef(&this->ast, back);
+			list_ref->val = stmt;
+
 			if (CURRENT.type == TOKEN_rcurly || CURRENT.type == TOKEN_eof) {
 				break;
 			}
-			curr = Ast_ListAppend(&this->ast, curr);
+			back = Ast_ListAppend(&this->ast, back);
 		}
 	}
 	else {
 		list_head = Ast_AllocNode(&this->ast, AstNone);
-		AstNode *node = Ast_GetNodeRef(&this->ast, list_head);
-		node[0] = AST_TYPE_None;
+		AstNone *none = (AstNone*)Ast_GetNodeRef(&this->ast, list_head);
+		none->type = AST_TYPE_None;
 	}
 
 	if (CURRENT.type == TOKEN_eof) {
-		ERROR("Unexpected EOF Missing right curly brace\n");
+		ERROR("Unexpected EOF. Missing right curly brace\n");
 		return AST_INVALID_HANDLE;
 	}
 	NEXT();

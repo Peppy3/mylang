@@ -8,18 +8,25 @@
 
 #include <stdlib.h>
 
+#include "util.h"
+#include "Token.h"
+
 #define AST_NODE_X_LIST \
 	X(None)\
 	X(Literal)\
-	X(List)
+	X(List)\
+	X(BinOp)\
+	X(PostOp)\
+	X(UnaryOp)
 
-typedef enum AstNodeType {
+enum AstNodeType_e {
 #define X(name) AST_TYPE_##name,
 AST_NODE_X_LIST
 #undef X
 	AST_NODE_TYPE_END
-} AstNodeType;
+};
 
+typedef int32_t AstNodeType;
 typedef int32_t AstNode;
 typedef int32_t AstNodeHandle;
 #define AST_INVALID_HANDLE (-1)
@@ -28,15 +35,40 @@ typedef int32_t AstNodeHandle;
 AST_NODE_X_LIST
 #undef X
 
-struct AstNone {};
+// Doesn't work in -Wpedantic mode
+struct AstNone {
+	AstNodeType type;
+};
 
 struct AstLiteral {
-	int32_t val;
+	AstNodeType type;
+	TokenPos val;
 };
 
 // the value stored should come right after this
 struct AstList {
+	AstNodeType type;
 	AstNodeHandle next;
+	AstNodeHandle val;
+};
+
+struct AstBinOp {
+	AstNodeType type;
+	TokenPos op;
+	AstNodeHandle lhs;
+	AstNodeHandle rhs;
+};
+
+struct AstPostOp {
+	AstNodeType type;
+	TokenPos op;
+	AstNodeHandle val;
+};
+
+struct AstUnaryOp {
+	AstNodeType type;
+	TokenPos op;
+	AstNodeHandle val;
 };
 
 typedef struct {
@@ -62,7 +94,7 @@ AstNodeHandle Ast_AllocNode_(Ast *ast, uint32_t len);
 AstNodeHandle Ast_ListAppend(Ast *ast, AstNodeHandle back);
 
 static inline AstNode *Ast_GetNodeRef(const Ast *ast, AstNodeHandle handle) {
-	assert(handle > -1 && handle < ast->len);
+	util_assert(handle > -1 && handle < ast->len);
 	return &ast->data[handle];
 }
 

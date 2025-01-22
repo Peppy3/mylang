@@ -39,6 +39,7 @@ X(semicolon)	// ;
 X(colon)		// :
 X(at)			// @
 
+X(ASSIGNMENT_START)
 X(assignment)	// =
 X(assign_add)	// +=
 X(assign_sub)	// -=
@@ -52,6 +53,7 @@ X(assign_not)	// ~=
 X(assign_xor)	// ^=
 X(assign_and)	// &=
 X(assign_or)	// |=
+X(ASSIGNMENT_END)
 
 X(lparen)	// (
 X(rparen)	// )
@@ -95,8 +97,9 @@ X(int)
 X(uint)
 X(TYPE_END)
 
-X(LITERAL_START)
 X(identifier)
+
+X(LITERAL_START)
 X(integer)
 X(hexadecimal)
 X(float_lit)

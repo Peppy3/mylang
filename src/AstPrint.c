@@ -40,29 +40,78 @@ void Ast_Print_None(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
 }
 
 void Ast_Print_Literal(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
-	AstNode *token_node = Ast_GetNodeRef(&ctx->ast, handle);
-	Token *token = &(ctx->tokens.tokens[token_node[1]]);
+	AstLiteral *lit = (AstLiteral*)Ast_GetNodeRef(&ctx->ast, handle);
+	Token *token = &(ctx->tokens.tokens[lit->val]);
 
 	print_token(fp, &ctx->src, token);
 }
 
 void Ast_Print_List(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
-	AstNode *ref;
+	AstList *list;
 
 	fprintf(fp, "List: {\n");
 
 	for (;;) {
 
-		Ast_PrettyPrint_internal(ctx, fp, handle + 2);
-		ref = Ast_GetNodeRef(&ctx->ast, handle);
+		list = (AstList*)Ast_GetNodeRef(&ctx->ast, handle);
+		Ast_PrettyPrint_internal(ctx, fp, list->val);
 
-		if (ref[1] == AST_INVALID_HANDLE) {
+		if (list->next == AST_INVALID_HANDLE) {
 			break;
 		}
 		fprintf(fp, ",\n");
-		handle = ref[1];
-		ref = Ast_GetNodeRef(&ctx->ast, handle);
+		handle = list->next;
+		list = (AstList*)Ast_GetNodeRef(&ctx->ast, handle);
 	}
+
+	fprintf(fp, "\n}");
+}
+
+
+void Ast_Print_BinOp(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
+	fprintf(fp, "BinOp: {\n");
+	
+	AstBinOp *op = (AstBinOp*)Ast_GetNodeRef(&ctx->ast, handle);
+
+	fprintf(fp, "op: ");
+	Token *op_token = &(ctx->tokens.tokens[op->op]);
+	print_token(fp, &ctx->src, op_token);
+
+	fprintf(fp, ",\nlhs: ");
+	Ast_PrettyPrint_internal(ctx, fp, op->lhs);
+
+	fprintf(fp, ",\nrhs: ");
+	Ast_PrettyPrint_internal(ctx, fp, op->rhs);
+
+	fprintf(fp, "\n}");
+}
+
+void Ast_Print_PostOp(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
+	fprintf(fp, "PostOp: {\n");
+
+	AstPostOp *op = (AstPostOp*)Ast_GetNodeRef(&ctx->ast, handle);
+
+	fprintf(fp, "op: ");
+	Token *op_token = &(ctx->tokens.tokens[op->op]);
+	print_token(fp, &ctx->src, op_token);
+
+	fprintf(fp, ",\nval: ");
+	Ast_PrettyPrint_internal(ctx, fp, op->val);
+
+	fprintf(fp, "\n}");
+}
+
+void Ast_Print_UnaryOp(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
+	fprintf(fp, "UnaryOp: {\n");
+
+	AstUnaryOp *op = (AstUnaryOp*)Ast_GetNodeRef(&ctx->ast, handle);
+
+	fprintf(fp, "op: ");
+	Token *op_token = &(ctx->tokens.tokens[op->op]);
+	print_token(fp, &ctx->src, op_token);
+
+	fprintf(fp, ",\nval: ");
+	Ast_PrettyPrint_internal(ctx, fp, op->val);
 
 	fprintf(fp, "\n}");
 }
