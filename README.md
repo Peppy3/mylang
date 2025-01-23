@@ -27,5 +27,5 @@ Right now the compiler takes in one file argument and nothing more.
 It will spit out a token stream onto stdout and any internal errors on
 stderr. I recommend looking at the output though ``less``
 
-	./mylang ../test/test1.txt
+	./mylang ../test/test2.txt
 

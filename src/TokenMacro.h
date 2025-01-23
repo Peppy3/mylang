@@ -98,11 +98,8 @@ X(uint)
 X(TYPE_END)
 
 X(identifier)
-
-X(LITERAL_START)
 X(integer)
 X(hexadecimal)
 X(float_lit)
 X(string)
 X(char_lit)
-X(LITERAL_END)

@@ -27,7 +27,12 @@ static inline bool Token_is_type_specifier(const Token tok) {
 }
 
 static inline bool Token_is_literal(const Token tok) {
-	return TOKEN_LITERAL_START < tok.type && tok.type < TOKEN_LITERAL_END;
+	return tok.type == TOKEN_integer
+		|| tok.type == TOKEN_hexadecimal
+		|| tok.type == TOKEN_float_lit
+		|| tok.type == TOKEN_string
+		|| tok.type == TOKEN_char_lit
+		;
 }
 
 static inline bool Token_is_assignment(const Token tok) {

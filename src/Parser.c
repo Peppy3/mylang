@@ -94,7 +94,7 @@ PARSER_FUNC(primary_expr) {
 		TokenPos token_pos = NEXT();
 		handle = Ast_Make_Literal(&this->ast, (AstLiteral){
 			.type = AST_TYPE_Literal,
-			.val= token_pos,
+			.val = token_pos,
 		});
 		return handle;
 	}
@@ -107,6 +107,7 @@ PARSER_FUNC(primary_expr) {
 	handle = PARSE(expr);
 
 	if (CURRENT.type != TOKEN_rparen) {
+		ERROR("No closing paren. Got %s\n", Token_GetStringRep(CURRENT.type));
 		return AST_INVALID_HANDLE;
 	}
 	NEXT();
@@ -185,7 +186,7 @@ PARSER_FUNC(binary_expr) {
 
 PARSER_FUNC(assignment_expr) {
 	
-	AstNodeHandle lhs = PARSE(unary_expr);
+	AstNodeHandle lhs = PARSE(binary_expr);
 	if (!Token_is_assignment(CURRENT) || lhs == AST_INVALID_HANDLE) {
 		return lhs;
 	}
