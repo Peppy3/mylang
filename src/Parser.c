@@ -91,10 +91,14 @@ PARSER_FUNC(primary_expr) {
 
 	if (Token_is_literal(CURRENT) || CURRENT.type == TOKEN_identifier) {
 		TokenPos token_pos = NEXT();
-		handle = Ast_AllocNode(&this->ast, AstLiteral);
+		/*handle = Ast_AllocNode(&this->ast, AstLiteral);
 		AstLiteral *ref = (AstLiteral*)Ast_GetNodeRef(&this->ast, handle);
 		ref->type = AST_TYPE_Literal;
-		ref->val = token_pos;
+		ref->val = token_pos;*/
+		handle = Ast_Make_Literal(&this->ast, (AstLiteral){
+			.type = AST_TYPE_Literal,
+			.val= token_pos,
+		});
 		return handle;
 	}
 
@@ -120,9 +124,11 @@ PARSER_FUNC(postfix_expr, AstNodeHandle primary) {
 	
 	if (CURRENT.type == TOKEN_inc || CURRENT.type == TOKEN_dec) {
 		TokenPos op_pos = NEXT();
-		AstNodeHandle op_handle = Ast_AllocNode(&this->ast, AstPostOp);
-		AstPostOp *op = (AstPostOp*)Ast_GetNodeRef(&this->ast, op_handle);
-		*op = (AstPostOp){.type = AST_TYPE_PostOp, .op = op_pos, .val = primary};
+		AstNodeHandle op_handle = Ast_Make_PostOp(&this->ast, (AstPostOp){
+			.type = AST_TYPE_PostOp,
+			.op = op_pos,
+			.val = primary,
+		});
 		
 		primary = PARSE(postfix_expr, op_handle);
 	}
@@ -141,14 +147,12 @@ PARSER_FUNC(assignment_expr) {
 
 	AstNodeHandle rhs = PARSE(postfix_expr, AST_INVALID_HANDLE);
 	
-	AstNodeHandle handle = Ast_AllocNode(&this->ast, AstBinOp);
-	AstBinOp *assign = (AstBinOp*)Ast_GetNodeRef(&this->ast, handle);
-	*assign = (AstBinOp) {
+	AstNodeHandle handle = Ast_Make_BinOp(&this->ast, (AstBinOp) {
 		.type = AST_TYPE_BinOp,
 		.op = assignment_pos,
 		.lhs = lhs,
 		.rhs = rhs,
-	};
+	});
 
 	return handle;
 }
@@ -162,9 +166,7 @@ PARSER_FUNC(expr) {
 PARSER_FUNC(statement) {
 	if (CURRENT.type == TOKEN_semicolon) {
 		NEXT();
-		AstNodeHandle none = Ast_AllocNode(&this->ast, AstNone);
-		AstNone *none_ref = (AstNone*)Ast_GetNodeRef(&this->ast, none);
-		none_ref->type = AST_TYPE_None;
+		AstNodeHandle none = Ast_Make_None(&this->ast, (AstNone){.type = AST_TYPE_None});
 		return none;
 	}
 
@@ -212,9 +214,7 @@ PARSER_FUNC(statement_list) {
 		}
 	}
 	else {
-		list_head = Ast_AllocNode(&this->ast, AstNone);
-		AstNone *none = (AstNone*)Ast_GetNodeRef(&this->ast, list_head);
-		none->type = AST_TYPE_None;
+		list_head = Ast_Make_None(&this->ast, (AstNone){.type = AST_TYPE_None});
 	}
 
 	if (CURRENT.type == TOKEN_eof) {

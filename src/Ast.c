@@ -59,4 +59,14 @@ AstNodeHandle Ast_ListAppend(Ast *ast, AstNodeHandle back) {
 	return next_handle;
 }
 
+#define X(name)\
+AstNodeHandle Ast_Make_##name(Ast *ast, Ast##name node)\
+{\
+	AstNodeHandle handle = Ast_AllocNode_(ast, sizeof(Ast##name) >> 2);\
+	Ast##name *ref = (Ast##name*)Ast_GetNodeRef(ast, handle);\
+	*ref = node;\
+	return handle;\
+}
+AST_NODE_X_LIST
+#undef X
 

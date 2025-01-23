@@ -98,5 +98,9 @@ static inline AstNode *Ast_GetNodeRef(const Ast *ast, AstNodeHandle handle) {
 	return &ast->data[handle];
 }
 
+#define X(name) AstNodeHandle Ast_Make_##name(Ast *ast, Ast##name node);
+AST_NODE_X_LIST
+#undef X
+
 #endif /* AST_H_ */
 
