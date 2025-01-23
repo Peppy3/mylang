@@ -86,15 +86,12 @@ TokenPos parser_next(ParserCtx *this) {
 
 PARSER_FUNC(expr);
 
+
 PARSER_FUNC(primary_expr) {
 	AstNodeHandle handle = AST_INVALID_HANDLE;
 
 	if (Token_is_literal(CURRENT) || CURRENT.type == TOKEN_identifier) {
 		TokenPos token_pos = NEXT();
-		/*handle = Ast_AllocNode(&this->ast, AstLiteral);
-		AstLiteral *ref = (AstLiteral*)Ast_GetNodeRef(&this->ast, handle);
-		ref->type = AST_TYPE_Literal;
-		ref->val = token_pos;*/
 		handle = Ast_Make_Literal(&this->ast, (AstLiteral){
 			.type = AST_TYPE_Literal,
 			.val= token_pos,
@@ -117,6 +114,7 @@ PARSER_FUNC(primary_expr) {
 	return handle;
 }
 
+
 PARSER_FUNC(postfix_expr, AstNodeHandle primary) {
 	if (primary == AST_INVALID_HANDLE) {
 		primary = PARSE(primary_expr);
@@ -136,18 +134,67 @@ PARSER_FUNC(postfix_expr, AstNodeHandle primary) {
 	return primary;
 }
 
+
+PARSER_FUNC(unary_expr) {
+	if (!Token_is_unary(CURRENT)) {
+		return PARSE(postfix_expr, AST_INVALID_HANDLE);
+	}
+
+	TokenPos unary_pos = NEXT();
+	
+	AstNodeHandle val = PARSE(unary_expr);
+
+	return Ast_Make_UnaryOp(&this->ast, (AstUnaryOp){
+		.type = AST_TYPE_UnaryOp,
+		.op = unary_pos,
+		.val = val,
+	});
+}
+
+// Operator precedence parser for binary operators
+PARSER_FUNC(binary_expr1, AstNodeHandle lhs, int32_t min_precedence) {
+	
+	if (lhs == AST_INVALID_HANDLE) {
+		lhs = PARSE(unary_expr);
+	}
+
+	for (;;) {
+		
+		int32_t op_prec = Token_get_precedence(CURRENT);
+
+		if (op_prec < min_precedence) {
+			return lhs;
+		}
+
+		TokenPos op = NEXT();
+
+		AstNodeHandle rhs = PARSE(binary_expr1, AST_INVALID_HANDLE, op_prec + 1);
+	
+		lhs = Ast_Make_BinOp(&this->ast, (AstBinOp){
+			.type = AST_TYPE_BinOp,
+			.op = op,
+			.lhs = lhs,
+			.rhs = rhs
+		});
+	}
+}
+
+PARSER_FUNC(binary_expr) {
+	return PARSE(binary_expr1, AST_INVALID_HANDLE, TOKEN_MIN_PRECEDENCE + 1);
+}
+
 PARSER_FUNC(assignment_expr) {
 	
-	AstNodeHandle lhs = PARSE(primary_expr);
+	AstNodeHandle lhs = PARSE(unary_expr);
 	if (!Token_is_assignment(CURRENT) || lhs == AST_INVALID_HANDLE) {
 		return lhs;
 	}
 
 	TokenPos assignment_pos = NEXT();
 
-	AstNodeHandle rhs = PARSE(postfix_expr, AST_INVALID_HANDLE);
+	AstNodeHandle rhs = PARSE(binary_expr);
 	
-	AstNodeHandle handle = Ast_Make_BinOp(&this->ast, (AstBinOp) {
+	AstNodeHandle handle = Ast_Make_BinOp(&this->ast, (AstBinOp){
 		.type = AST_TYPE_BinOp,
 		.op = assignment_pos,
 		.lhs = lhs,

@@ -35,16 +35,28 @@ static inline bool Token_is_assignment(const Token tok) {
 }
 
 static inline bool Token_is_terminating(const Token tok) {
-	if (tok.type == TOKEN_comma
+	return tok.type == TOKEN_comma
 		|| tok.type == TOKEN_colon
 		|| tok.type == TOKEN_semicolon
 		|| tok.type == TOKEN_rcurly
 		|| tok.type == TOKEN_lsquare
-		|| tok.type == TOKEN_eof) {
-		return true;
-	}
-	return false;
+		|| tok.type == TOKEN_eof
+		;
 }
+
+static inline bool Token_is_unary(const Token tok) {
+	return tok.type == TOKEN_inc
+		|| tok.type == TOKEN_dec
+		|| tok.type == TOKEN_sub
+		|| tok.type == TOKEN_asterisk
+		|| tok.type == TOKEN_not
+		|| tok.type == TOKEN_bool_not
+		|| tok.type == TOKEN_ampersand
+		;
+}
+
+#define TOKEN_MIN_PRECEDENCE (0)
+int32_t Token_get_precedence(const Token tok);
 
 const char *Token_GetStringRep(enum TokenType type);
 
