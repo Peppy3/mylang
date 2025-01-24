@@ -26,3 +26,24 @@ void util_assert_impl(const char *expr, const char *file, unsigned int line)
 	exit(1);
 }
 
+#ifdef MEMORY_CHECK
+
+void *check_malloc(size_t size, const char *file, int line) {
+	void *ptr = malloc(size);
+	fprintf(stderr, "%s:%d %p malloc(%lu)\n", file, line, ptr, size);
+	return ptr;
+}
+
+void *check_realloc(void *ptr, size_t size, const char *file, int line) {
+	void *new = realloc(ptr, size);
+	fprintf(stderr, "%s:%d %p realloc(%p, %lu)\n", file, line, new, ptr, size);
+	return new;
+}
+
+void check_free(void *ptr, const char *file, int line) {
+	fprintf(stderr, "%s:%d free(%p)\n", file, line, ptr);
+	free(ptr);
+}
+
+#endif /* MEMORY_CHECK */
+

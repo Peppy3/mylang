@@ -85,7 +85,7 @@ TokenPos parser_next(ParserCtx *this) {
 }
 
 PARSER_FUNC(expr);
-
+PARSER_FUNC(assignment_expr);
 
 PARSER_FUNC(primary_expr) {
 	AstNodeHandle handle = AST_INVALID_HANDLE;
@@ -115,6 +115,71 @@ PARSER_FUNC(primary_expr) {
 	return handle;
 }
 
+PARSER_FUNC(slice_subscript, AstNodeHandle slice) {
+	if (CURRENT.type != TOKEN_lsquare) {
+		ERROR("Unreachable\n");
+		return AST_INVALID_HANDLE;
+	}
+	TokenPos lsquare_pos = NEXT();
+
+	AstNodeHandle index_expr = PARSE(expr);
+
+	if (CURRENT.type != TOKEN_rsquare) {
+		ERROR("Missing right square bracket after index expression\n");
+		return AST_INVALID_HANDLE;
+	}
+	NEXT();
+
+	return Ast_Make_BinOp(&this->ast, (AstBinOp){
+		.type = AST_TYPE_BinOp,
+		.op = lsquare_pos,
+		.lhs = slice,
+		.rhs = index_expr,
+	});
+}
+
+PARSER_FUNC(func_call, AstNodeHandle func) {
+	if (CURRENT.type != TOKEN_lparen) {
+		ERROR("Unreachable \n");
+		return AST_INVALID_HANDLE;
+	}
+
+	TokenPos lparen_pos = NEXT();
+
+	AstNodeHandle args_head = Ast_ListAppend(&this->ast, AST_INVALID_HANDLE);
+	AstList *args_ref = (AstList*)Ast_GetNodeRef(&this->ast, args_head);
+	args_ref->val = PARSE(assignment_expr);
+
+	if (CURRENT.type == TOKEN_comma) {
+		NEXT();
+
+		AstNodeHandle args_back = args_head;
+		while (CURRENT.type != TOKEN_rparen && CURRENT.type != TOKEN_eof) {
+
+			args_back = Ast_ListAppend(&this->ast, args_back);
+			args_ref = (AstList*)Ast_GetNodeRef(&this->ast, args_back);
+			args_ref->val = PARSE(assignment_expr);
+
+			if (CURRENT.type != TOKEN_comma) {
+				break;
+			}
+
+			NEXT();
+		}
+	}
+	if (CURRENT.type != TOKEN_rparen) {
+		ERROR("Missing right paren in function call\n");
+		return AST_INVALID_HANDLE;
+	}
+	NEXT();
+
+	return Ast_Make_BinOp(&this->ast, (AstBinOp){
+		.type = AST_TYPE_BinOp,
+		.op = lparen_pos,
+		.lhs = func,
+		.rhs = args_head,
+	});
+}
 
 PARSER_FUNC(postfix_expr, AstNodeHandle primary) {
 	if (primary == AST_INVALID_HANDLE) {
@@ -130,6 +195,14 @@ PARSER_FUNC(postfix_expr, AstNodeHandle primary) {
 		});
 		
 		primary = PARSE(postfix_expr, op_handle);
+	}
+	else if (CURRENT.type == TOKEN_lsquare) {
+		AstNodeHandle subscipt = PARSE(slice_subscript, primary);
+		primary = PARSE(postfix_expr, subscipt);
+	}
+	else if (CURRENT.type == TOKEN_lparen) {
+		AstNodeHandle call = PARSE(func_call, primary);
+		primary = PARSE(postfix_expr, call);
 	}
 	
 	return primary;
@@ -214,8 +287,7 @@ PARSER_FUNC(expr) {
 PARSER_FUNC(statement) {
 	if (CURRENT.type == TOKEN_semicolon) {
 		NEXT();
-		AstNodeHandle none = Ast_Make_None(&this->ast, (AstNone){.type = AST_TYPE_None});
-		return none;
+		return Ast_Make_None(&this->ast, (AstNone){.type = AST_TYPE_None});
 	}
 
 	AstNodeHandle handle = PARSE(expr);
@@ -246,23 +318,29 @@ PARSER_FUNC(statement_list) {
 	}
 	NEXT();
 
-	AstNodeHandle list_head = AST_INVALID_HANDLE;
-	if (CURRENT.type != TOKEN_rcurly || CURRENT.type == TOKEN_eof) {
-		list_head = Ast_ListAppend(&this->ast, list_head);
-		AstNodeHandle back = list_head;
-		for (;;) {
-			AstNodeHandle stmt = PARSE(statement);
-			AstList *list_ref = (AstList*)Ast_GetNodeRef(&this->ast, back);
-			list_ref->val = stmt;
-
-			if (CURRENT.type == TOKEN_rcurly || CURRENT.type == TOKEN_eof) {
-				break;
-			}
-			back = Ast_ListAppend(&this->ast, back);
-		}
+	if (CURRENT.type == TOKEN_rcurly) {
+		NEXT();
+		AstNodeHandle none_handle = Ast_Make_None(&this->ast, (AstNone){.type = AST_TYPE_None});
+		return Ast_Make_List(&this->ast, (AstList){
+			.type = AST_TYPE_List,
+			.next = AST_INVALID_HANDLE,
+			.val = none_handle,
+		});
 	}
-	else {
-		list_head = Ast_Make_None(&this->ast, (AstNone){.type = AST_TYPE_None});
+	
+	AstNodeHandle list_head = Ast_Make_List(&this->ast, (AstList){
+		.type = AST_TYPE_List,
+		.next = AST_INVALID_HANDLE,
+	});
+
+	AstList *list_ref = (AstList*)Ast_GetNodeRef(&this->ast, list_head);	
+	list_ref->val = PARSE(statement);
+
+	AstNodeHandle list_back = list_head;
+	while (CURRENT.type != TOKEN_rcurly && CURRENT.type != TOKEN_eof) {
+		list_back = Ast_ListAppend(&this->ast, list_back);
+		list_ref = (AstList*)Ast_GetNodeRef(&this->ast, list_back);
+		list_ref->val = PARSE(statement);
 	}
 
 	if (CURRENT.type == TOKEN_eof) {

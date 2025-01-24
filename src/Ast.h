@@ -35,7 +35,6 @@ typedef int32_t AstNodeHandle;
 AST_NODE_X_LIST
 #undef X
 
-// Doesn't work in -Wpedantic mode
 struct AstNone {
 	AstNodeType type;
 };
@@ -45,7 +44,6 @@ struct AstLiteral {
 	TokenPos val;
 };
 
-// the value stored should come right after this
 struct AstList {
 	AstNodeType type;
 	AstNodeHandle next;
@@ -93,7 +91,7 @@ AstNodeHandle Ast_AllocNode_(Ast *ast, uint32_t len);
 // The element in the list should be the value at the index
 AstNodeHandle Ast_ListAppend(Ast *ast, AstNodeHandle back);
 
-static inline AstNode *Ast_GetNodeRef(const Ast *ast, AstNodeHandle handle) {
+static inline AstNode *Ast_GetNodeRef(Ast *ast, AstNodeHandle handle) {
 	util_assert(handle > -1 && handle < ast->len);
 	return &ast->data[handle];
 }
