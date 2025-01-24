@@ -3,9 +3,9 @@
 #include <stdbool.h>
 
 #include <errno.h>
-#include <stdlib.h>
 #include <stdio.h>
 
+#include "util.h"
 #include "ParserFile.h"
 #include "Token.h"
 
@@ -53,8 +53,10 @@ AstNodeHandle Ast_ListAppend(Ast *ast, AstNodeHandle back) {
 	
 	AstList *next_ref = (AstList*)Ast_GetNodeRef(ast, next_handle);
 
-	next_ref->type = AST_TYPE_List;
-	next_ref->next = AST_INVALID_HANDLE;
+	*next_ref = (AstList){
+		.type = AST_TYPE_List,
+		.next = AST_INVALID_HANDLE,
+	};
 	
 	return next_handle;
 }
