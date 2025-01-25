@@ -31,8 +31,14 @@ int Ast_New(Ast *ast) {
 AstNodeHandle Ast_AllocNode_(Ast *ast, uint32_t len) { 
 	AstNodeHandle handle = ast->len;
 	ast->len += len;
+
+	uint32_t grow_by = ast->cap >> 1;
+	if (len > grow_by) {
+		grow_by = len;
+	}
+
 	if (ast->len >= ast->cap) {
-		ast->cap += AST_START_CAP;
+		ast->cap += grow_by;
 		AstNode *new_data = realloc(ast->data, sizeof(AstNode) * ast->cap);
 		if (new_data == NULL) {
 			perror("Ast_AllocNode_()");
