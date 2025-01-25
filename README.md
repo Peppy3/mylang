@@ -12,6 +12,7 @@ Build dependencies:
 
 - ISO C11 standard compliant C compiler
 - cmake
+- make
 
 ### How to build
 
@@ -19,6 +20,7 @@ Use cmake to configure and build the project
 
 	mkdir build && cd build
  	cmake .. -DCMAKE_BUILD_TYPE=Release
+  	make
 
 
 ### Running the damn thing
