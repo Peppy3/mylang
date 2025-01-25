@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include <assert.h>
 
+#include <errno.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -19,7 +20,7 @@ int ParserFile_Open(ParserFile *file, const char *filename) {
 
 	fd = open(filename, O_RDONLY);
 	if (fd < 0) {
-		perror(filename);
+		fprintf(stderr, "%s: Could not open file. %s\n", filename, strerror(errno));
 		return -1;
 	}
 	
@@ -39,7 +40,7 @@ int ParserFile_Open(ParserFile *file, const char *filename) {
 	file->data = malloc(file->size);
 
 	if (file->data == NULL) {
-		perror("ParserFile_Open:malloc");
+		fprintf(stderr, "ParserFile_Open: %s\n", strerror(errno));
 		return -1;
 	}
 
@@ -72,7 +73,7 @@ void ParserFile_PrintLine(const ParserFile file, size_t line_start_pos, int tab_
 
 	for (size_t i = line_start_pos; file.data[i] != '\n' && i < file.size; i++) {
 		if (file.data[i] == '\t') {
-			for (size_t j = 0; j < tab_len; j++) {
+			for (int j = 0; j < tab_len; j++) {
 				fputc(' ', stream);
 			}
 		}

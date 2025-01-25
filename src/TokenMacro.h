@@ -81,7 +81,10 @@ X(const)
 X(macro)
 X(extern)
 X(inline)
+
 X(linkname)
+X(import)
+X(as)
 
 X(struct)
 X(union)

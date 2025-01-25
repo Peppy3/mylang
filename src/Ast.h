@@ -74,6 +74,7 @@ struct AstDeclarator {
 	AstNodeType type;
 	TokenPos ident;
 	TokenPos typename;
+	AstNodeHandle expr;
 };
 
 typedef struct {
@@ -95,7 +96,7 @@ AstNodeHandle Ast_AllocNode_(Ast *ast, uint32_t len);
 #define Ast_AllocNode(ast, T) Ast_AllocNode_(ast, sizeof(T) >> 2)
 
 static inline AstNode *Ast_GetNodeRef(Ast *ast, AstNodeHandle handle) {
-	util_assert(handle > -1 && handle < ast->len);
+	util_assert(handle > -1 && handle < (int32_t)ast->len);
 	return &ast->data[handle];
 }
 

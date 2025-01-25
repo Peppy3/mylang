@@ -2,14 +2,14 @@ cmake_minimum_required(VERSION 3.15)
 
 project(mylang C)
 
-add_compile_options(-Wall -Werror)
+add_compile_options(-Wall -Wextra)
 
 if(${CMAKE_BUILD_TYPE} STREQUAL Debug)
 	add_compile_options(-fsanitize=address)
 	add_link_options(-fsanitize=address)
 endif()
 
-if(${MEMORY_CHECK} STREQUAL true)
+if(${MEMORY_CHECK})
 	add_compile_options(-DMEMORY_CHECK)
 endif()
 

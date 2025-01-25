@@ -26,7 +26,7 @@
 
 size_t calc_line_num(const ParserCtx *ctx, const Token *tok) {
 	size_t line_num = 1;
-	for (size_t i = 0; i < tok->pos; i++) {
+	for (int32_t i = 0; i < tok->pos; i++) {
 		if (ctx->src.data[i] == '\n') {
 			line_num++;
 		}
@@ -149,9 +149,8 @@ PARSER_FUNC(func_call, AstNodeHandle func) {
 
 	TokenPos lparen_pos = NEXT();
 
-	AstNodeHandle args_head = Ast_ListAppend(&this->ast, AST_INVALID_HANDLE);
-	AstList *args_ref = (AstList*)Ast_GetNodeRef(&this->ast, args_head);
-	args_ref->val = PARSE(assignment_expr);
+	AstNodeHandle args_head = Ast_ListAppend(&AST, AST_INVALID_HANDLE);
+	args_head = Ast_ListAddVal(&AST, args_head, PARSE(assignment_expr));
 
 	if (CURRENT.type == TOKEN_comma) {
 		NEXT();
@@ -159,9 +158,8 @@ PARSER_FUNC(func_call, AstNodeHandle func) {
 		AstNodeHandle args_back = args_head;
 		while (CURRENT.type != TOKEN_rparen && CURRENT.type != TOKEN_eof) {
 
-			args_back = Ast_ListAppend(&this->ast, args_back);
-			args_ref = (AstList*)Ast_GetNodeRef(&this->ast, args_back);
-			args_ref->val = PARSE(assignment_expr);
+			args_back = Ast_ListAppend(&AST, args_back);
+			args_back = Ast_ListAddVal(&AST, args_back, PARSE(assignment_expr));
 
 			if (CURRENT.type != TOKEN_comma) {
 				break;
@@ -176,7 +174,7 @@ PARSER_FUNC(func_call, AstNodeHandle func) {
 	}
 	NEXT();
 
-	return Ast_Make_BinOp(&this->ast, (AstBinOp){
+	return Ast_Make_BinOp(&AST, (AstBinOp){
 		.type = AST_TYPE_BinOp,
 		.op = lparen_pos,
 		.lhs = func,
@@ -331,20 +329,25 @@ PARSER_FUNC(declarator) {
 	});
 
 	if (CURRENT.type == TOKEN_semicolon) {
+		AstNodeHandle none_expr = Ast_Make_None(&AST, (AstNone){.type = AST_TYPE_None});
+
+		AstDeclarator *ref = (AstDeclarator*)Ast_GetNodeRef(&AST, decl_handle);
+		ref->expr = none_expr;
+
 		return decl_handle;
 	}
 	else if (CURRENT.type != TOKEN_assignment) {
 		ERROR("Missing assignment operator at in declaration\n");
 		return AST_INVALID_HANDLE;
 	}
-	TokenPos assignment_pos = NEXT();
+	NEXT();
 
-	return Ast_Make_BinOp(&AST, (AstBinOp){
-		.type = AST_TYPE_BinOp,
-		.op = assignment_pos,
-		.lhs = decl_handle,
-		.rhs = PARSE(expr_statement),
-	});
+	AstNodeHandle expr = PARSE(expr_statement);
+
+	AstDeclarator *ref = (AstDeclarator*)Ast_GetNodeRef(&AST, decl_handle);
+	ref->expr = expr;
+
+	return decl_handle;
 }
 
 PARSER_FUNC(statement) {

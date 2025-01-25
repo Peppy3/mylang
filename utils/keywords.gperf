@@ -40,6 +40,8 @@ null,		TOKEN_null
 true,		TOKEN_true
 false,		TOKEN_false
 linkname,	TOKEN_linkname
+import,		TOKEN_import
+as,			TOKEN_as
 int,		TOKEN_int
 uint,		TOKEN_uint
 not,		TOKEN_bool_not

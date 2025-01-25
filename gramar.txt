@@ -7,7 +7,7 @@
 
 [import_stmt]
 	= "import" > [constant_expr] > TOKEN_semicolon
-	| "import" > [constant_expr] > "as" > TOKEN_identifier > TOKEN_semicolon
+	| "import" > [constant_expr] > "as" > [constant_expr]> TOKEN_semicolon
 	;
 
 [type_qualifier]
@@ -18,17 +18,7 @@
 	| "inline"
 	;
 
-[struct_declaration]
-	= 
 
-[struct_declaration_list]
-	= [struct_declaration]
-	| [struct_declaration_list] > [struct_declaration]
-	;
 
-[definition]
-	= "struct" > TOKEN_identifier > TOKEN_lcurly > [struct_declaration_list] > TOKEN_rcurly
-	| "union" > TOKEN_identifier > TOKEN_lcurly > [struct_declaration_list] > TOKEN_rcurly
-	| [variable_or_func_definition]
-	;
+
 

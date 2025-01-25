@@ -129,6 +129,8 @@ void Ast_Print_Declarator(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
 	Token *typename_token = &(ctx->tokens.tokens[stmt->typename]);
 	print_token(fp, &ctx->src, typename_token);
 
+	fprintf(fp, ",\nexpr: ");
+	Ast_PrettyPrint_internal(ctx, fp, stmt->expr);
 
 	fprintf(fp, "\n}");
 }
