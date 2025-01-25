@@ -116,3 +116,20 @@ void Ast_Print_UnaryOp(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
 	fprintf(fp, "\n}");
 }
 
+void Ast_Print_Declarator(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
+	fprintf(fp, "Declarator: {\n");
+
+	AstDeclarator *stmt = (AstDeclarator*)Ast_GetNodeRef(&ctx->ast, handle);
+
+	fprintf(fp, "ident: ");
+	Token *ident_token = &(ctx->tokens.tokens[stmt->ident]);
+	print_token(fp, &ctx->src, ident_token);
+
+	fprintf(fp, ",\ntypename: ");
+	Token *typename_token = &(ctx->tokens.tokens[stmt->typename]);
+	print_token(fp, &ctx->src, typename_token);
+
+
+	fprintf(fp, "\n}");
+}
+

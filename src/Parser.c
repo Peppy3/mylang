@@ -20,6 +20,8 @@
 #define PARSE(func, ...) parse_##func(this __VA_OPT__(,) __VA_ARGS__)
 #define ERROR(msg, ...) parser_error(this, msg __VA_OPT__(,) __VA_ARGS__)
 #define CURRENT (this->tokens.tokens[this->tokens.pos])
+#define LOOKAHEAD (this->tokens.tokens[this->tokens.pos + 1])
+#define AST (this->ast)
 #define NEXT() parser_next(this)
 
 size_t calc_line_num(const ParserCtx *ctx, const Token *tok) {
@@ -86,6 +88,7 @@ TokenPos parser_next(ParserCtx *this) {
 
 PARSER_FUNC(expr);
 PARSER_FUNC(assignment_expr);
+PARSER_FUNC(statement);
 
 PARSER_FUNC(primary_expr) {
 	AstNodeHandle handle = AST_INVALID_HANDLE;
@@ -284,7 +287,7 @@ PARSER_FUNC(expr) {
 	return handle;
 }
 
-PARSER_FUNC(statement) {
+PARSER_FUNC(expr_statement) {
 	if (CURRENT.type == TOKEN_semicolon) {
 		NEXT();
 		return Ast_Make_None(&this->ast, (AstNone){.type = AST_TYPE_None});
@@ -311,50 +314,62 @@ PARSER_FUNC(statement) {
 	return handle;
 }
 
-PARSER_FUNC(statement_list) {
-	if (CURRENT.type != TOKEN_lcurly) {
-		ERROR("Unexpected %s Missing left curly brace\n", Token_GetStringRep(CURRENT.type));
-		return AST_INVALID_HANDLE;
-	}
+PARSER_FUNC(declarator) {
+	TokenPos ident_pos = NEXT();
 	NEXT();
 
-	if (CURRENT.type == TOKEN_rcurly) {
-		NEXT();
-		AstNodeHandle none_handle = Ast_Make_None(&this->ast, (AstNone){.type = AST_TYPE_None});
-		return Ast_Make_List(&this->ast, (AstList){
-			.type = AST_TYPE_List,
-			.next = AST_INVALID_HANDLE,
-			.val = none_handle,
-		});
+	if (!Token_is_type_specifier(CURRENT)) {
+		ERROR("Missing type specifier in declaration\n");
+		return AST_INVALID_HANDLE;
 	}
-	
-	AstNodeHandle list_head = Ast_Make_List(&this->ast, (AstList){
-		.type = AST_TYPE_List,
-		.next = AST_INVALID_HANDLE,
+	TokenPos type_pos = NEXT();
+
+	AstNodeHandle decl_handle = Ast_Make_Declarator(&AST, (AstDeclarator){
+		.type = AST_TYPE_Declarator,
+		.ident = ident_pos,
+		.typename = type_pos,
 	});
 
-	AstList *list_ref = (AstList*)Ast_GetNodeRef(&this->ast, list_head);	
-	list_ref->val = PARSE(statement);
-
-	AstNodeHandle list_back = list_head;
-	while (CURRENT.type != TOKEN_rcurly && CURRENT.type != TOKEN_eof) {
-		list_back = Ast_ListAppend(&this->ast, list_back);
-		list_ref = (AstList*)Ast_GetNodeRef(&this->ast, list_back);
-		list_ref->val = PARSE(statement);
+	if (CURRENT.type == TOKEN_semicolon) {
+		return decl_handle;
 	}
-
-	if (CURRENT.type == TOKEN_eof) {
-		ERROR("Unexpected EOF. Missing right curly brace\n");
+	else if (CURRENT.type != TOKEN_assignment) {
+		ERROR("Missing assignment operator at in declaration\n");
 		return AST_INVALID_HANDLE;
 	}
-	NEXT();
+	TokenPos assignment_pos = NEXT();
 
-	return list_head;
+	return Ast_Make_BinOp(&AST, (AstBinOp){
+		.type = AST_TYPE_BinOp,
+		.op = assignment_pos,
+		.lhs = decl_handle,
+		.rhs = PARSE(expr_statement),
+	});
+}
+
+PARSER_FUNC(statement) {
+	if (CURRENT.type == TOKEN_identifier && LOOKAHEAD.type == TOKEN_colon) {
+		return PARSE(declarator);
+	}
+	else {
+		return PARSE(expr_statement);
+	}
+}
+
+PARSER_FUNC(statement_list, AstNodeHandle list) {
+	if (CURRENT.type == TOKEN_eof) {
+		return AST_INVALID_HANDLE;
+	}
+	
+	AstNodeHandle back = Ast_ListAppend(&AST, list);
+	back = Ast_ListAddVal(&AST, back, PARSE(statement));
+	
+	return PARSE(statement_list, back);
 }
 
 int parse(ParserCtx *this) {
 	
-	PARSE(statement_list);
+	PARSE(statement_list, AST_INVALID_HANDLE);
 	
 	return this->num_errors;
 }

@@ -17,7 +17,8 @@
 	X(List)\
 	X(BinOp)\
 	X(PostOp)\
-	X(UnaryOp)
+	X(UnaryOp)\
+	X(Declarator)
 
 enum AstNodeType_e {
 #define X(name) AST_TYPE_##name,
@@ -69,6 +70,12 @@ struct AstUnaryOp {
 	AstNodeHandle val;
 };
 
+struct AstDeclarator {
+	AstNodeType type;
+	TokenPos ident;
+	TokenPos typename;
+};
+
 typedef struct {
 	uint32_t cap;
 	uint32_t len;
@@ -87,13 +94,19 @@ static inline void Ast_Delete(const Ast *ast) {
 AstNodeHandle Ast_AllocNode_(Ast *ast, uint32_t len);
 #define Ast_AllocNode(ast, T) Ast_AllocNode_(ast, sizeof(T) >> 2)
 
+static inline AstNode *Ast_GetNodeRef(Ast *ast, AstNodeHandle handle) {
+	util_assert(handle > -1 && handle < ast->len);
+	return &ast->data[handle];
+}
+
 // if back == AST_INVALID_HANDLE, it starts a new list
 // The element in the list should be the value at the index
 AstNodeHandle Ast_ListAppend(Ast *ast, AstNodeHandle back);
 
-static inline AstNode *Ast_GetNodeRef(Ast *ast, AstNodeHandle handle) {
-	util_assert(handle > -1 && handle < ast->len);
-	return &ast->data[handle];
+static inline AstNodeHandle Ast_ListAddVal(Ast *ast, AstNodeHandle back, AstNodeHandle val) {
+	AstList *back_ref = (AstList*)Ast_GetNodeRef(ast, back);
+	back_ref->val = val;
+	return back;
 }
 
 #define X(name) AstNodeHandle Ast_Make_##name(Ast *ast, Ast##name node);

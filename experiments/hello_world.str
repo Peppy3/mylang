@@ -1,0 +1,14 @@
+linkname "main";
+
+import std.io as io;
+
+
+
+pub main: () -> int {
+
+	io.print("Hello World!\n");
+
+	return 0;
+}
+
+

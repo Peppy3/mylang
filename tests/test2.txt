@@ -1,52 +1,6 @@
-{
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-bar = foo(1, 2);
-baz = bar[foo];
-}
+
+y: int;
+x: int = 4;
+y = 5;
+print(x + y);
+

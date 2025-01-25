@@ -1,0 +1,26 @@
+linkname "main";
+
+extern stderr: *void;
+extern stdout: *void;
+
+extern fprintf: (stream: *void, fmt: const [*]u8, ...) -> int;
+extern atoi: (nptr: const [*]u8) -> int;
+
+square: (x: int) -> int {
+	return x * x;
+}
+
+pub main: (argc: int, argv: [*][*]u8) -> int {
+	if argc < 1 {
+		fprintf(stderr, "%s <INT>", argv[0]);
+		return 1;
+	}
+	
+	num: int = atoi(argv[1]);
+
+	void = fprintf(stdout, "%d * %d = %d", x, x, square(x));
+
+	return 0;
+}
+
+

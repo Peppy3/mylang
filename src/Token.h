@@ -32,6 +32,9 @@ static inline bool Token_is_literal(const Token tok) {
 		|| tok.type == TOKEN_float_lit
 		|| tok.type == TOKEN_string
 		|| tok.type == TOKEN_char_lit
+		|| tok.type == TOKEN_null
+		|| tok.type == TOKEN_true
+		|| tok.type == TOKEN_false
 		;
 }
 
@@ -57,6 +60,13 @@ static inline bool Token_is_unary(const Token tok) {
 		|| tok.type == TOKEN_not
 		|| tok.type == TOKEN_bool_not
 		|| tok.type == TOKEN_ampersand
+		;
+}
+
+static inline bool Token_is_storage_specifier(const Token tok) {
+	return tok.type == TOKEN_const
+		|| tok.type == TOKEN_extern
+		|| tok.type == TOKEN_inline
 		;
 }
 
