@@ -9,7 +9,7 @@ if(${CMAKE_BUILD_TYPE} STREQUAL Debug)
 	add_link_options(-fsanitize=address)
 endif()
 
-if(${MEMORY_CHECK} STREQUAL true)
+if(${MEMORY_CHECK})
 	add_compile_options(-DMEMORY_CHECK)
 endif()
 
