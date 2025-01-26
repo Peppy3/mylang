@@ -1,24 +1,15 @@
 
 [expr] = ...
 
-[constant_expr] = [expr]
 
-[linkname_stmt] = "linkname" > TOKEN_string > TOKEN_semicolon;
 
-[import_stmt]
-	= "import" > [constant_expr] > TOKEN_semicolon
-	| "import" > [constant_expr] > "as" > [constant_expr]> TOKEN_semicolon
+[declarator] 
+	= TOKEN_identifier > TOKEN_colon > TOKEN_lparen > [func_expr] > TOKEN_rparen
+	| TOKEN_identifier > TOKEN_colon > [type_expr]
 	;
 
-[type_qualifier]
-	= "pub"
-	| "const"
-	| "macro"
-	| "extern"
-	| "inline"
+[declaration_list]
+	= [declaration]
+	| [declaration_list] > [declaration]
 	;
-
-
-
-
 

@@ -21,7 +21,7 @@ static inline void TokenStream_Free(TokenStream *stream) {
 }
 
 static inline bool TokenStream_IsEof(TokenStream *stream) {
-	return stream->pos >= stream->len;
+	return stream->pos > stream->len;
 }
 
 static inline int32_t TokenStream_Iter(TokenStream *stream) {

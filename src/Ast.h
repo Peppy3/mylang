@@ -18,7 +18,7 @@
 	X(BinOp)\
 	X(PostOp)\
 	X(UnaryOp)\
-	X(Declarator)
+	X(Declaration)
 
 enum AstNodeType_e {
 #define X(name) AST_TYPE_##name,
@@ -70,10 +70,10 @@ struct AstUnaryOp {
 	AstNodeHandle val;
 };
 
-struct AstDeclarator {
+struct AstDeclaration {
 	AstNodeType type;
 	TokenPos ident;
-	TokenPos typename;
+	AstNodeHandle type_expr;
 	AstNodeHandle expr;
 };
 

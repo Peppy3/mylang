@@ -25,7 +25,7 @@ int TokenStream_Generate(TokenStream *stream, ParserFile *src) {
 			grow_by = len;
 		}
 		
-		if (len >= cap) {
+		if (len > cap) {
 			cap += grow_by;
 			Token *new_list = realloc(token_list, sizeof(Token) * cap); 
 			if (new_list == NULL) { 

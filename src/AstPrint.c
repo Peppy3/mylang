@@ -10,7 +10,7 @@
 
 void Ast_PrettyPrint_internal(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
 	if (handle == AST_INVALID_HANDLE) {
-		fprintf(fp, "INVALID_HANDLE\n");
+		fprintf(fp, "INVALID_HANDLE");
 		return;
 	}
 
@@ -116,18 +116,17 @@ void Ast_Print_UnaryOp(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
 	fprintf(fp, "\n}");
 }
 
-void Ast_Print_Declarator(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
-	fprintf(fp, "Declarator: {\n");
+void Ast_Print_Declaration(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
+	fprintf(fp, "Declaration: {\n");
 
-	AstDeclarator *stmt = (AstDeclarator*)Ast_GetNodeRef(&ctx->ast, handle);
+	AstDeclaration *stmt = (AstDeclaration*)Ast_GetNodeRef(&ctx->ast, handle);
 
 	fprintf(fp, "ident: ");
 	Token *ident_token = &(ctx->tokens.tokens[stmt->ident]);
 	print_token(fp, &ctx->src, ident_token);
 
-	fprintf(fp, ",\ntypename: ");
-	Token *typename_token = &(ctx->tokens.tokens[stmt->typename]);
-	print_token(fp, &ctx->src, typename_token);
+	fprintf(fp, ",\ntype_expr: ");
+	Ast_PrettyPrint_internal(ctx, fp, stmt->type_expr);
 
 	fprintf(fp, ",\nexpr: ");
 	Ast_PrettyPrint_internal(ctx, fp, stmt->expr);

@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include <stdarg.h>
 #include <assert.h>
+#include <setjmp.h>
 
 #include <string.h>
 #include <stdio.h>
@@ -23,6 +24,8 @@
 #define LOOKAHEAD (this->tokens.tokens[this->tokens.pos + 1])
 #define AST (this->ast)
 #define NEXT() parser_next(this)
+
+static jmp_buf parser_env;
 
 size_t calc_line_num(const ParserCtx *ctx, const Token *tok) {
 	size_t line_num = 1;
@@ -46,9 +49,22 @@ size_t calc_line_pos(const ParserCtx *ctx, const Token *tok) {
 
 __attribute__((format (printf, 2, 3)))
 void parser_error(ParserCtx *this, const char *err_fmt, ...) {
+	this->num_errors += 1;
+
+	if (CURRENT.type == TOKEN_eof) {
+		fprintf(stderr, "%s: ", this->source_path);
+
+		va_list vargs;
+		va_start(vargs, err_fmt);
+		vfprintf(stderr, err_fmt, vargs);
+		va_end(vargs);
+
+		fprintf(stderr, "Got an error but reached end of file\n");
+		longjmp(parser_env, 1);
+	}
+
 	Token tok = CURRENT;
 	const size_t tab_len = 4;
-	this->num_errors += 1;
 	size_t line_num = calc_line_num(this, &tok);
 	size_t line_pos = calc_line_pos(this, &tok);
 	size_t col_num = tok.pos - line_pos;
@@ -60,6 +76,7 @@ void parser_error(ParserCtx *this, const char *err_fmt, ...) {
 	va_start(vargs, err_fmt);
 	vfprintf(stderr, err_fmt, vargs);
 	va_end(vargs);
+
 
 	ParserFile_PrintLine(this->src, line_pos, tab_len, stderr);
 
@@ -88,12 +105,17 @@ TokenPos parser_next(ParserCtx *this) {
 
 PARSER_FUNC(expr);
 PARSER_FUNC(assignment_expr);
+PARSER_FUNC(declaration_list, AstNodeHandle list);
 PARSER_FUNC(statement);
+PARSER_FUNC(compound_statement);
 
 PARSER_FUNC(primary_expr) {
 	AstNodeHandle handle = AST_INVALID_HANDLE;
 
-	if (Token_is_literal(CURRENT) || CURRENT.type == TOKEN_identifier) {
+	if (Token_is_literal(CURRENT) 
+		|| CURRENT.type == TOKEN_identifier 
+		|| Token_is_type_specifier(CURRENT)) {
+
 		TokenPos token_pos = NEXT();
 		handle = Ast_Make_Literal(&this->ast, (AstLiteral){
 			.type = AST_TYPE_Literal,
@@ -295,9 +317,6 @@ PARSER_FUNC(expr_statement) {
 
 	if (handle == AST_INVALID_HANDLE) {
 		ERROR("Could not parse expression\n");
-		while (!Token_is_terminating(CURRENT)) {
-			NEXT();
-		}
 		NEXT();
 		return AST_INVALID_HANDLE;
 	}
@@ -312,47 +331,154 @@ PARSER_FUNC(expr_statement) {
 	return handle;
 }
 
-PARSER_FUNC(declarator) {
-	TokenPos ident_pos = NEXT();
-	NEXT();
+PARSER_FUNC(func_type, TokenPos ident_pos) {
+	AstNodeHandle decl_handle = Ast_Make_Declaration(&AST, (AstDeclaration){
+		.type = AST_TYPE_Declaration,
+		.ident = ident_pos,
+	});
+	NEXT(); // TOKEN_lparen
+	
+	AstNodeHandle type_handle = Ast_AllocNode(&AST, AstBinOp);
 
-	if (!Token_is_type_specifier(CURRENT)) {
-		ERROR("Missing type specifier in declaration\n");
+	AstNodeHandle args = AST_INVALID_HANDLE;
+	if (CURRENT.type == TOKEN_rparen) {
+		args = Ast_Make_None(&AST, (AstNone){.type = AST_TYPE_None});
+	}
+	else {
+		args = PARSE(declaration_list, AST_INVALID_HANDLE);
+	}
+
+	if (CURRENT.type != TOKEN_rparen) {
+		ERROR("Missing closing paren in argument list\n");
 		return AST_INVALID_HANDLE;
 	}
-	TokenPos type_pos = NEXT();
+	NEXT();
+	
+	if (CURRENT.type != TOKEN_arrow) {
+		ERROR("Missing right arrow in funciton type\n");
+		return AST_INVALID_HANDLE;
+	}
+	TokenPos arrow_pos = NEXT();
+	
+	if (!Token_is_type_specifier(CURRENT)) {
+		ERROR("Missing type specifier in variable declaration\n");
+		return AST_INVALID_HANDLE;
+	}
 
-	AstNodeHandle decl_handle = Ast_Make_Declarator(&AST, (AstDeclarator){
-		.type = AST_TYPE_Declarator,
-		.ident = ident_pos,
-		.typename = type_pos,
+	AstNodeHandle return_type = Ast_Make_Literal(&AST, (AstLiteral){
+		.type = AST_TYPE_Literal,
+		.val = NEXT(),
 	});
 
-	if (CURRENT.type == TOKEN_semicolon) {
-		AstNodeHandle none_expr = Ast_Make_None(&AST, (AstNone){.type = AST_TYPE_None});
+	AstBinOp *type_expr = (AstBinOp*)Ast_GetNodeRef(&AST, type_handle);
+	*type_expr = (AstBinOp){
+		.type = AST_TYPE_BinOp,
+		.op = arrow_pos,
+		.lhs = args,
+		.rhs = return_type,
+	};
 
-		AstDeclarator *ref = (AstDeclarator*)Ast_GetNodeRef(&AST, decl_handle);
-		ref->expr = none_expr;
+	AstDeclaration *ref = (AstDeclaration*)Ast_GetNodeRef(&AST, decl_handle);
+	ref->type_expr = type_handle;
+	
+	return decl_handle;
+}
 
-		return decl_handle;
-	}
-	else if (CURRENT.type != TOKEN_assignment) {
-		ERROR("Missing assignment operator at in declaration\n");
+PARSER_FUNC(var_type, TokenPos ident_pos) {
+	AstNodeHandle decl_handle = Ast_Make_Declaration(&AST, (AstDeclaration){
+		.type = AST_TYPE_Declaration,
+		.ident = ident_pos,
+	});
+
+	if (!Token_is_type_specifier(CURRENT)) {
+		ERROR("Missing type specifier in variable declaration\n");
 		return AST_INVALID_HANDLE;
 	}
-	NEXT();
 
-	AstNodeHandle expr = PARSE(expr_statement);
+	AstNodeHandle type_expr = Ast_Make_Literal(&AST, (AstLiteral){
+		.type = AST_TYPE_Literal,
+		.val = NEXT(),
+	});
 
-	AstDeclarator *ref = (AstDeclarator*)Ast_GetNodeRef(&AST, decl_handle);
-	ref->expr = expr;
+	AstDeclaration *ref = (AstDeclaration*)Ast_GetNodeRef(&AST, decl_handle);
+	ref->type_expr = type_expr;
 
 	return decl_handle;
 }
 
+PARSER_FUNC(declaration) {
+	TokenPos ident_pos = NEXT();
+	NEXT();
+
+	if (CURRENT.type == TOKEN_lparen) {
+		return PARSE(func_type, ident_pos);
+	}
+	else if (Token_is_type_specifier(CURRENT)) {
+		return PARSE(var_type, ident_pos);
+	}
+	else {
+		ERROR("Missing type specifier in declaration\n");
+		return AST_INVALID_HANDLE;
+	}
+}
+
+PARSER_FUNC(declaration_list, AstNodeHandle list) {
+	list = Ast_ListAppend(&AST, list);
+
+	AstNodeHandle decl = PARSE(declaration);
+
+	AstNodeHandle none_hanlde = Ast_Make_None(&AST, (AstNone){.type = AST_TYPE_None});
+
+	// Patch in the expression here
+	AstDeclaration *ref = (AstDeclaration*)Ast_GetNodeRef(&AST, decl);
+	ref->expr = none_hanlde;
+
+	list = Ast_ListAddVal(&AST, list, decl);
+
+	if (CURRENT.type != TOKEN_comma) {
+		return AST_INVALID_HANDLE;
+	}
+	NEXT();
+
+	PARSE(declaration_list, list);
+	return list;
+}
+
+PARSER_FUNC(declaration_statement) {
+	
+	AstNodeHandle decl = PARSE(declaration);
+
+	if (decl == AST_INVALID_HANDLE) {
+		return AST_INVALID_HANDLE;
+	}
+	
+	AstNodeHandle expr = AST_INVALID_HANDLE;
+	if (CURRENT.type == TOKEN_assignment) {
+		NEXT();
+		expr = PARSE(expr_statement);
+	}
+	else if (CURRENT.type == TOKEN_lcurly) {
+		expr = PARSE(compound_statement);
+	}
+	else if (CURRENT.type == TOKEN_semicolon) {
+		NEXT();
+		expr = Ast_Make_None(&AST, (AstNone){.type = AST_TYPE_None});
+	}
+	else {
+		ERROR("Invalid declaration statement\n");
+		return AST_INVALID_HANDLE;
+	}
+
+	// Patch in the expression here
+	AstDeclaration *ref = (AstDeclaration*)Ast_GetNodeRef(&AST, decl);
+	ref->expr = expr;
+	
+	return decl;
+}
+
 PARSER_FUNC(statement) {
 	if (CURRENT.type == TOKEN_identifier && LOOKAHEAD.type == TOKEN_colon) {
-		return PARSE(declarator);
+		return PARSE(declaration_statement);
 	}
 	else {
 		return PARSE(expr_statement);
@@ -364,13 +490,42 @@ PARSER_FUNC(statement_list, AstNodeHandle list) {
 		return AST_INVALID_HANDLE;
 	}
 	
-	AstNodeHandle back = Ast_ListAppend(&AST, list);
-	back = Ast_ListAddVal(&AST, back, PARSE(statement));
+	list = Ast_ListAppend(&AST, list);
+	list = Ast_ListAddVal(&AST, list, PARSE(statement));
 	
-	return PARSE(statement_list, back);
+	PARSE(statement_list, list);
+	return list;
+}
+
+PARSER_FUNC(compound_statement) {
+
+	if (CURRENT.type != TOKEN_lcurly) {
+		ERROR("Expected left curly brace before compund statement\n");
+		return AST_INVALID_HANDLE;
+	}
+	NEXT();
+	
+	if (CURRENT.type == TOKEN_rcurly) {
+		NEXT();
+		return Ast_Make_None(&AST, (AstNone){.type = AST_TYPE_None});
+	}
+
+	AstNodeHandle list = PARSE(statement_list, AST_INVALID_HANDLE);
+
+	if (CURRENT.type != TOKEN_rcurly) {
+		ERROR("Expected right curly brace after compund statement\n");
+		return AST_INVALID_HANDLE;
+	}
+	NEXT();
+	
+	return list;
 }
 
 int parse(ParserCtx *this) {
+
+	if (setjmp(parser_env)) {
+		return this->num_errors;
+	}
 	
 	PARSE(statement_list, AST_INVALID_HANDLE);
 	

@@ -1,6 +1,13 @@
 
-y: int;
-x: int = 4;
-y = 5;
-print(x + y);
+foo: int;
+foo: int = 42;
+
+foo: (bar: int, baz: int) -> int;
+foo: (bar: int) -> int;
+foo: () -> int;
+
+foo: (bar: int, baz: int) -> int {}
+foo: (bar: int) -> int {}
+foo: () -> int {}
+
 
