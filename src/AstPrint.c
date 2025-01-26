@@ -134,3 +134,45 @@ void Ast_Print_Declaration(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
 	fprintf(fp, "\n}");
 }
 
+void Ast_Print_FuncType(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
+	fprintf(fp, "FuncType: {\n");
+
+	AstFuncType *type = (AstFuncType*)Ast_GetNodeRef(&ctx->ast, handle);
+
+	fprintf(fp, "args: ");
+	Ast_PrettyPrint_internal(ctx, fp, type->args);
+
+	fprintf(fp, ",\nreturns: ");
+	Ast_PrettyPrint_internal(ctx, fp, type->returns);
+
+	fprintf(fp, "\n}");
+}
+
+void Ast_Print_ReturnStmt(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
+	fprintf(fp, "ReturnStmt: {\n");
+
+	AstReturnStmt *stmt = (AstReturnStmt*)Ast_GetNodeRef(&ctx->ast, handle);
+
+	fprintf(fp, "expr: ");
+	Ast_PrettyPrint_internal(ctx, fp, stmt->expr);
+
+	fprintf(fp, "\n}");
+}
+
+void Ast_Print_IfStmt(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
+	fprintf(fp, "IfStmt: {\n");
+
+	AstIfStmt *stmt = (AstIfStmt*)Ast_GetNodeRef(&ctx->ast, handle);
+
+	fprintf(fp, "expr: ");
+	Ast_PrettyPrint_internal(ctx, fp, stmt->expr);
+
+	fprintf(fp, ",\nif_block: ");
+	Ast_PrettyPrint_internal(ctx, fp, stmt->if_block);
+
+	fprintf(fp, ",\nelse_block: ");
+	Ast_PrettyPrint_internal(ctx, fp, stmt->else_block);
+
+	fprintf(fp, "\n}");
+}
+

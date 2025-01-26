@@ -103,7 +103,7 @@ TokenPos parser_next(ParserCtx *this) {
 	return pos;
 }
 
-PARSER_FUNC(expr);
+PARSER_FUNC(expression);
 PARSER_FUNC(assignment_expr);
 PARSER_FUNC(declaration_list, AstNodeHandle list);
 PARSER_FUNC(statement);
@@ -129,7 +129,7 @@ PARSER_FUNC(primary_expr) {
 	}
 	NEXT();
 
-	handle = PARSE(expr);
+	handle = PARSE(expression);
 
 	if (CURRENT.type != TOKEN_rparen) {
 		ERROR("No closing paren. Got %s\n", Token_GetStringRep(CURRENT.type));
@@ -147,7 +147,7 @@ PARSER_FUNC(slice_subscript, AstNodeHandle slice) {
 	}
 	TokenPos lsquare_pos = NEXT();
 
-	AstNodeHandle index_expr = PARSE(expr);
+	AstNodeHandle index_expr = PARSE(expression);
 
 	if (CURRENT.type != TOKEN_rsquare) {
 		ERROR("Missing right square bracket after index expression\n");
@@ -301,7 +301,7 @@ PARSER_FUNC(assignment_expr) {
 	return handle;
 }
 
-PARSER_FUNC(expr) {
+PARSER_FUNC(expression) {
 	AstNodeHandle handle = PARSE(assignment_expr);
 
 	return handle;
@@ -313,7 +313,7 @@ PARSER_FUNC(expr_statement) {
 		return Ast_Make_None(&this->ast, (AstNone){.type = AST_TYPE_None});
 	}
 
-	AstNodeHandle handle = PARSE(expr);
+	AstNodeHandle handle = PARSE(expression);
 
 	if (handle == AST_INVALID_HANDLE) {
 		ERROR("Could not parse expression\n");
@@ -338,7 +338,7 @@ PARSER_FUNC(func_type, TokenPos ident_pos) {
 	});
 	NEXT(); // TOKEN_lparen
 	
-	AstNodeHandle type_handle = Ast_AllocNode(&AST, AstBinOp);
+	AstNodeHandle type_handle = Ast_AllocNode(&AST, AstFuncType);
 
 	AstNodeHandle args = AST_INVALID_HANDLE;
 	if (CURRENT.type == TOKEN_rparen) {
@@ -358,7 +358,7 @@ PARSER_FUNC(func_type, TokenPos ident_pos) {
 		ERROR("Missing right arrow in funciton type\n");
 		return AST_INVALID_HANDLE;
 	}
-	TokenPos arrow_pos = NEXT();
+	NEXT();
 	
 	if (!Token_is_type_specifier(CURRENT)) {
 		ERROR("Missing type specifier in variable declaration\n");
@@ -370,12 +370,11 @@ PARSER_FUNC(func_type, TokenPos ident_pos) {
 		.val = NEXT(),
 	});
 
-	AstBinOp *type_expr = (AstBinOp*)Ast_GetNodeRef(&AST, type_handle);
-	*type_expr = (AstBinOp){
-		.type = AST_TYPE_BinOp,
-		.op = arrow_pos,
-		.lhs = args,
-		.rhs = return_type,
+	AstFuncType *func_def = (AstFuncType*)Ast_GetNodeRef(&AST, type_handle);
+	*func_def = (AstFuncType){
+		.type = AST_TYPE_FuncType,
+		.args = args,
+		.returns = return_type,
 	};
 
 	AstDeclaration *ref = (AstDeclaration*)Ast_GetNodeRef(&AST, decl_handle);
@@ -433,10 +432,10 @@ PARSER_FUNC(declaration_list, AstNodeHandle list) {
 	AstDeclaration *ref = (AstDeclaration*)Ast_GetNodeRef(&AST, decl);
 	ref->expr = none_hanlde;
 
-	list = Ast_ListAddVal(&AST, list, decl);
+	Ast_ListAddVal(&AST, list, decl);
 
 	if (CURRENT.type != TOKEN_comma) {
-		return AST_INVALID_HANDLE;
+		return list;
 	}
 	NEXT();
 
@@ -476,17 +475,61 @@ PARSER_FUNC(declaration_statement) {
 	return decl;
 }
 
+PARSER_FUNC(return_statement) {
+	NEXT();
+	return Ast_Make_ReturnStmt(&AST, (AstReturnStmt){
+		.type = AST_TYPE_ReturnStmt,
+		.expr = PARSE(expr_statement),
+	});
+}
+
+PARSER_FUNC(if_statement) {
+	NEXT();
+
+	AstNodeHandle stmt = Ast_AllocNode(&AST, AstIfStmt);
+
+	AstNodeHandle expr = PARSE(expression);
+
+	AstNodeHandle if_block = PARSE(compound_statement);
+
+	AstNodeHandle else_block = AST_INVALID_HANDLE;
+	if (CURRENT.type == TOKEN_else) {
+		NEXT();
+		else_block = PARSE(compound_statement);
+	}
+	else {
+		else_block = Ast_Make_None(&AST, (AstNone){.type = AST_TYPE_None});
+	}
+
+	AstIfStmt *stmt_ref = (AstIfStmt*)Ast_GetNodeRef(&AST, stmt);
+	*stmt_ref = (AstIfStmt){
+		.type = AST_TYPE_IfStmt,
+		.expr = expr,
+		.if_block = if_block,
+		.else_block = else_block,
+	};
+
+	return stmt;
+}
+
 PARSER_FUNC(statement) {
 	if (CURRENT.type == TOKEN_identifier && LOOKAHEAD.type == TOKEN_colon) {
 		return PARSE(declaration_statement);
 	}
-	else {
-		return PARSE(expr_statement);
+	
+	switch (CURRENT.type) {
+	
+		case TOKEN_return:
+			return PARSE(return_statement);
+		case TOKEN_if:
+			return PARSE(if_statement);
+		default:
+			return PARSE(expr_statement);
 	}
 }
 
 PARSER_FUNC(statement_list, AstNodeHandle list) {
-	if (CURRENT.type == TOKEN_eof) {
+	if (CURRENT.type == TOKEN_rcurly || CURRENT.type == TOKEN_eof) {
 		return AST_INVALID_HANDLE;
 	}
 	

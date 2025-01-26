@@ -95,8 +95,27 @@ X(true)
 X(false)
 
 X(TYPE_START)
-X(int)
-X(uint)
+
+X(i8)
+X(i16)
+X(i32)
+X(i64)
+
+X(u8)
+X(u16)
+X(u32)
+X(u64)
+
+X(f16)
+X(f32)
+X(f64)
+
+X(int)	// word sized
+X(uint)	// word sized
+X(void)
+X(bool)
+X(type)
+
 X(TYPE_END)
 
 X(identifier)
