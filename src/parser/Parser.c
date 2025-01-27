@@ -8,12 +8,12 @@
 #include <string.h>
 #include <stdio.h>
 
-#include "ParserFile.h"
-#include "Token.h"
-#include "Tokenizer.h"
-#include "Ast.h"
+#include <ParserFile.h>
+#include <tokenizer/Token.h>
+#include <tokenizer/Tokenizer.h>
+#include <ast/Ast.h>
 
-#include "Parser.h"
+#include <parser/Parser.h>
 
 #define PARSER_FUNC(name, ...) \
 	static AstNodeHandle parse_##name(ParserCtx *this __VA_OPT__(,) __VA_ARGS__)

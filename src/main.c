@@ -2,13 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "util.h"
-#include "ParserCtx.h"
-#include "Ast.h"
-#include "AstPrint.h"
-#include "Parser.h"
+#include <util.h>
+#include <parser/ParserCtx.h>
+#include <ast/Ast.h>
+#include <ast/AstPrint.h>
+#include <parser/Parser.h>
 
-#include "args/args.h"
+#include <args/args.h>
 
 int main(int argc, char **argv) {
 	ParserCtx ctx = {0};

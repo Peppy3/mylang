@@ -3,8 +3,8 @@
 
 #include <stdio.h>
 
-#include "Ast.h"
-#include "ParserCtx.h"
+#include <ast/Ast.h>
+#include <parser/ParserCtx.h>
 
 // pretty prints the entire ast
 void Ast_PrettyPrint(ParserCtx *ctx, FILE *fp);

@@ -7,9 +7,9 @@
 
 #include "util.h"
 #include "ParserFile.h"
-#include "Token.h"
+#include <tokenizer/Token.h>
 
-#include "Ast.h"
+#include <ast/Ast.h>
 
 #define AST_START_CAP (512)
 int Ast_New(Ast *ast) {

@@ -2,11 +2,12 @@
 
 #include <stdio.h>
 
-#include "util.h"
-#include "Token.h"
-#include "Ast.h"
+#include <util.h>
+#include <tokenizer/Token.h>
+#include <parser/ParserCtx.h>
+#include <ast/Ast.h>
 
-#include "AstPrint.h"
+#include <ast/AstPrint.h>
 
 void Ast_PrettyPrint_internal(ParserCtx *ctx, FILE *fp, AstNodeHandle handle) {
 	if (handle == AST_INVALID_HANDLE) {

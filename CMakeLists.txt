@@ -16,5 +16,8 @@ endif()
 add_executable(${PROJECT_NAME})
 target_compile_features(${PROJECT_NAME} PUBLIC c_std_11)
 
+target_include_directories(${PROJECT_NAME} PRIVATE ./src)
+
 add_subdirectory(src)
+
 

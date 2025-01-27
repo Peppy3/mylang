@@ -5,7 +5,7 @@
 
 #include <signal.h>
 
-#include "Token.h"
+#include <tokenizer/Token.h>
 #include "ParserFile.h"
 
 void print_token(FILE *stream, ParserFile *src, Token *token)

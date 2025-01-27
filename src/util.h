@@ -1,11 +1,12 @@
 #ifndef UTIL_H_
 #define UTIL_H_
 
+#include <stddef.h>
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "ParserFile.h"
-#include "Token.h"
+#include <ParserFile.h>
+#include <tokenizer/Token.h>
 
 void print_token(FILE *stream, ParserFile *src, Token *token);
 
@@ -23,7 +24,12 @@ void util_assert_impl(const char *expr,
 		)
 #endif
 
+#define GET_PARENT_PTR(ptr, Type, member)\
+	((Type*)((char*)ptr - (size_t)&(((Type*)0)->member))
+
 #ifdef MEMORY_CHECK
+
+#include <stdlib.h>
 
 void *check_malloc(size_t size, const char *file, int line);
 void *check_realloc(void *ptr, size_t size, const char *file, int line);

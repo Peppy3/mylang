@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "ParserFile.h"
-#include "TokenStream.h"
-#include "Ast.h"
+#include <ParserFile.h>
+#include <tokenizer/TokenStream.h>
+#include <ast/Ast.h>
 
-#include "ParserCtx.h"
+#include <parser/ParserCtx.h>
 
 int ParserCtx_Setup(ParserCtx *ctx, char *filepath) {
 	size_t filepath_len = strlen(filepath) + 1;

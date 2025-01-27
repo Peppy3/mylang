@@ -8,10 +8,10 @@
 
 #include <stdlib.h>
 
-#include "util.h"
-#include "Token.h"
+#include <util.h>
+#include <tokenizer/Token.h>
 
-#include "AstTypes.h"
+#include <ast/AstTypes.h>
 
 typedef struct {
 	uint32_t cap;

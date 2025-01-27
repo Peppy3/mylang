@@ -1,9 +1,9 @@
 #ifndef PARSER_CTX_H_
 #define PARSER_CTX_H_
 
-#include "ParserFile.h"
-#include "TokenStream.h"
-#include "Ast.h"
+#include <ParserFile.h>
+#include <tokenizer/TokenStream.h>
+#include <ast/Ast.h>
 
 struct ParserCtx {
 	char *source_path;

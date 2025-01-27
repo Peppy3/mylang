@@ -34,9 +34,9 @@
 
 #include <stddef.h>
 #include <string.h>
-#include "Token.h"
+#include <tokenizer/Token.h>
 
-#include "Keywords.h"
+#include <Keywords.h>
 
 #line 19 "../utils/keywords.gperf"
 struct KeywordResult;
