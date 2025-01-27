@@ -495,7 +495,12 @@ PARSER_FUNC(if_statement) {
 	AstNodeHandle else_block = AST_INVALID_HANDLE;
 	if (CURRENT.type == TOKEN_else) {
 		NEXT();
-		else_block = PARSE(compound_statement);
+		if (CURRENT.type == TOKEN_if) {
+			else_block = PARSE(if_statement);
+		}
+		else {
+			else_block = PARSE(compound_statement);
+		}
 	}
 	else {
 		else_block = Ast_Make_None(&AST, (AstNone){.type = AST_TYPE_None});

@@ -3,7 +3,9 @@ exponential: (n: int) -> int {
 	if n < 0 {
 		return 0;
 	}
-	return n * exponential(n - 1);
+	else {
+		return n * exponential(n - 1);
+	}
 };
 
 main: () -> int {

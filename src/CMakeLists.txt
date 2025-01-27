@@ -1,4 +1,7 @@
 
+
+add_subdirectory(args)
+
 target_sources(${PROJECT_NAME} PRIVATE main.c)
 target_sources(${PROJECT_NAME} PRIVATE arena.c)
 target_sources(${PROJECT_NAME} PRIVATE Keywords.c)

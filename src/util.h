@@ -1,6 +1,7 @@
 #ifndef UTIL_H_
 #define UTIL_H_
 
+#include <stdlib.h>
 #include <stdio.h>
 
 #include "ParserFile.h"
@@ -24,8 +25,6 @@ void util_assert_impl(const char *expr,
 
 #ifdef MEMORY_CHECK
 
-#include <stdlib.h>
-
 void *check_malloc(size_t size, const char *file, int line);
 void *check_realloc(void *ptr, size_t size, const char *file, int line);
 void check_free(void *ptr, const char *file, int line);
@@ -37,3 +36,4 @@ void check_free(void *ptr, const char *file, int line);
 #endif /* MEMORY_CHECK */
 
 #endif /* UTIL_H_ */
+
