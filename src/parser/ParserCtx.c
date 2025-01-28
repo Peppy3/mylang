@@ -21,16 +21,9 @@ int ParserCtx_Setup(ParserCtx *ctx, char *filepath) {
 		return -1;
 	}
 
-	if (TokenStream_Generate(&ctx->tokens, &ctx->src)) {
-		free(filepath_cpy);
-		ParserFile_Close(&ctx->src);
-		return -1;
-	}
-
 	if (Ast_New(&ctx->ast)) {
 		free(filepath_cpy);
 		ParserFile_Close(&ctx->src);
-		TokenStream_Free(&ctx->tokens);
 		return -1;
 	}
 	
@@ -40,7 +33,6 @@ int ParserCtx_Setup(ParserCtx *ctx, char *filepath) {
 void ParserCtx_Teardown(ParserCtx *ctx) {
 	free(ctx->source_path);
 	ParserFile_Close(&ctx->src);
-	TokenStream_Free(&ctx->tokens);
 	Ast_Delete(&ctx->ast);
 }
 

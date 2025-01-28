@@ -1,6 +1,8 @@
 #ifndef AST_TYPES_H_
 #define AST_TYPES_H_
 
+#include <tokenizer/Token.h>
+
 #define AST_NODE_X_LIST \
 	X(None)\
 	X(Literal)\
@@ -36,7 +38,7 @@ struct AstNone {
 
 struct AstLiteral {
 	AstNodeType type;
-	TokenPos val;
+	Token val;
 };
 
 struct AstList {
@@ -47,27 +49,27 @@ struct AstList {
 
 struct AstBinOp {
 	AstNodeType type;
-	TokenPos op;
 	AstNodeHandle lhs;
 	AstNodeHandle rhs;
+	Token op;
 };
 
 struct AstPostOp {
 	AstNodeType type;
-	TokenPos op;
 	AstNodeHandle val;
+	Token op;
 };
 
 struct AstUnaryOp {
 	AstNodeType type;
-	TokenPos op;
 	AstNodeHandle val;
+	Token op;
 };
 
 struct AstDeclaration {
 	AstNodeType type;
-	TokenPos ident;
 	AstNodeHandle type_expr;
+	Token ident;
 	AstNodeHandle expr;
 };
 

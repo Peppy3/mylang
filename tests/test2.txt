@@ -13,4 +13,13004 @@ main: () -> int {
 	return 0;
 }
 
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
+exponential: (n: int) -> int {
+	if n < 0 {
+		return 0;
+	}
+	else {
+		return n * exponential(n - 1);
+	}
+};
+
+main: () -> int {
+	pi: f32 = 3.14;
+	return 0;
+}
 

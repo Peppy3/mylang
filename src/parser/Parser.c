@@ -20,8 +20,8 @@
 
 #define PARSE(func, ...) parse_##func(this __VA_OPT__(,) __VA_ARGS__)
 #define ERROR(msg, ...) parser_error(this, msg __VA_OPT__(,) __VA_ARGS__)
-#define CURRENT (this->tokens.tokens[this->tokens.pos])
-#define LOOKAHEAD (this->tokens.tokens[this->tokens.pos + 1])
+#define CURRENT (this->current_token)
+#define LOOKAHEAD (this->lookahead_token)
 #define AST (this->ast)
 #define NEXT() parser_next(this)
 
@@ -63,11 +63,10 @@ void parser_error(ParserCtx *this, const char *err_fmt, ...) {
 		longjmp(parser_env, 1);
 	}
 
-	Token tok = CURRENT;
 	const size_t tab_len = 4;
-	size_t line_num = calc_line_num(this, &tok);
-	size_t line_pos = calc_line_pos(this, &tok);
-	size_t col_num = tok.pos - line_pos;
+	size_t line_num = calc_line_num(this, &this->current_token);
+	size_t line_pos = calc_line_pos(this, &this->current_token);
+	size_t col_num = this->current_token.pos - line_pos;
 	
 	fprintf(stderr, "%s:%lu:%lu ", this->source_path,
 		line_num, col_num + 1);
@@ -95,12 +94,16 @@ void parser_error(ParserCtx *this, const char *err_fmt, ...) {
 }
 
 // gives the idex of the token or -1 if it's the end of the list
-TokenPos parser_next(ParserCtx *this) {
+Token parser_next(ParserCtx *this) {
+	Token next = CURRENT;
+	CURRENT = LOOKAHEAD;
+	LOOKAHEAD = NextToken(&this->src);
+
 	if (CURRENT.type == TOKEN_invalid) {
 		ERROR("Invalid token\n");
 	}
-	TokenPos pos = TokenStream_Iter(&this->tokens);
-	return pos;
+
+	return next;
 }
 
 PARSER_FUNC(expression);
@@ -116,10 +119,10 @@ PARSER_FUNC(primary_expr) {
 		|| CURRENT.type == TOKEN_identifier 
 		|| Token_is_type_specifier(CURRENT)) {
 
-		TokenPos token_pos = NEXT();
+		Token token = NEXT();
 		handle = Ast_Make_Literal(&this->ast, (AstLiteral){
 			.type = AST_TYPE_Literal,
-			.val = token_pos,
+			.val = token,
 		});
 		return handle;
 	}
@@ -145,7 +148,7 @@ PARSER_FUNC(slice_subscript, AstNodeHandle slice) {
 		ERROR("Unreachable\n");
 		return AST_INVALID_HANDLE;
 	}
-	TokenPos lsquare_pos = NEXT();
+	Token lsquare = NEXT();
 
 	AstNodeHandle index_expr = PARSE(expression);
 
@@ -157,7 +160,7 @@ PARSER_FUNC(slice_subscript, AstNodeHandle slice) {
 
 	return Ast_Make_BinOp(&this->ast, (AstBinOp){
 		.type = AST_TYPE_BinOp,
-		.op = lsquare_pos,
+		.op = lsquare,
 		.lhs = slice,
 		.rhs = index_expr,
 	});
@@ -169,7 +172,7 @@ PARSER_FUNC(func_call, AstNodeHandle func) {
 		return AST_INVALID_HANDLE;
 	}
 
-	TokenPos lparen_pos = NEXT();
+	Token lparen = NEXT();
 
 	AstNodeHandle args_head = Ast_ListAppend(&AST, AST_INVALID_HANDLE);
 	args_head = Ast_ListAddVal(&AST, args_head, PARSE(assignment_expr));
@@ -198,7 +201,7 @@ PARSER_FUNC(func_call, AstNodeHandle func) {
 
 	return Ast_Make_BinOp(&AST, (AstBinOp){
 		.type = AST_TYPE_BinOp,
-		.op = lparen_pos,
+		.op = lparen,
 		.lhs = func,
 		.rhs = args_head,
 	});
@@ -210,10 +213,10 @@ PARSER_FUNC(postfix_expr, AstNodeHandle primary) {
 	}
 	
 	if (CURRENT.type == TOKEN_inc || CURRENT.type == TOKEN_dec) {
-		TokenPos op_pos = NEXT();
+		Token op = NEXT();
 		AstNodeHandle op_handle = Ast_Make_PostOp(&this->ast, (AstPostOp){
 			.type = AST_TYPE_PostOp,
-			.op = op_pos,
+			.op = op,
 			.val = primary,
 		});
 		
@@ -237,13 +240,13 @@ PARSER_FUNC(unary_expr) {
 		return PARSE(postfix_expr, AST_INVALID_HANDLE);
 	}
 
-	TokenPos unary_pos = NEXT();
+	Token unary = NEXT();
 	
 	AstNodeHandle val = PARSE(unary_expr);
 
 	return Ast_Make_UnaryOp(&this->ast, (AstUnaryOp){
 		.type = AST_TYPE_UnaryOp,
-		.op = unary_pos,
+		.op = unary,
 		.val = val,
 	});
 }
@@ -263,7 +266,7 @@ PARSER_FUNC(binary_expr1, AstNodeHandle lhs, int32_t min_precedence) {
 			return lhs;
 		}
 
-		TokenPos op = NEXT();
+		Token op = NEXT();
 
 		AstNodeHandle rhs = PARSE(binary_expr1, AST_INVALID_HANDLE, op_prec + 1);
 	
@@ -287,13 +290,13 @@ PARSER_FUNC(assignment_expr) {
 		return lhs;
 	}
 
-	TokenPos assignment_pos = NEXT();
+	Token assignment = NEXT();
 
 	AstNodeHandle rhs = PARSE(binary_expr);
 	
 	AstNodeHandle handle = Ast_Make_BinOp(&this->ast, (AstBinOp){
 		.type = AST_TYPE_BinOp,
-		.op = assignment_pos,
+		.op = assignment,
 		.lhs = lhs,
 		.rhs = rhs,
 	});
@@ -331,10 +334,10 @@ PARSER_FUNC(expr_statement) {
 	return handle;
 }
 
-PARSER_FUNC(func_type, TokenPos ident_pos) {
+PARSER_FUNC(func_type, Token ident) {
 	AstNodeHandle decl_handle = Ast_Make_Declaration(&AST, (AstDeclaration){
 		.type = AST_TYPE_Declaration,
-		.ident = ident_pos,
+		.ident = ident,
 	});
 	NEXT(); // TOKEN_lparen
 	
@@ -383,10 +386,10 @@ PARSER_FUNC(func_type, TokenPos ident_pos) {
 	return decl_handle;
 }
 
-PARSER_FUNC(var_type, TokenPos ident_pos) {
+PARSER_FUNC(var_type, Token ident) {
 	AstNodeHandle decl_handle = Ast_Make_Declaration(&AST, (AstDeclaration){
 		.type = AST_TYPE_Declaration,
-		.ident = ident_pos,
+		.ident = ident,
 	});
 
 	if (!Token_is_type_specifier(CURRENT)) {
@@ -406,14 +409,14 @@ PARSER_FUNC(var_type, TokenPos ident_pos) {
 }
 
 PARSER_FUNC(declaration) {
-	TokenPos ident_pos = NEXT();
+	Token ident = NEXT();
 	NEXT();
 
 	if (CURRENT.type == TOKEN_lparen) {
-		return PARSE(func_type, ident_pos);
+		return PARSE(func_type, ident);
 	}
 	else if (Token_is_type_specifier(CURRENT)) {
-		return PARSE(var_type, ident_pos);
+		return PARSE(var_type, ident);
 	}
 	else {
 		ERROR("Missing type specifier in declaration\n");
@@ -570,6 +573,9 @@ PARSER_FUNC(compound_statement) {
 }
 
 int parse(ParserCtx *this) {
+
+	CURRENT = NextToken(&this->src);
+	LOOKAHEAD = NextToken(&this->src);
 
 	if (setjmp(parser_env)) {
 		return this->num_errors;

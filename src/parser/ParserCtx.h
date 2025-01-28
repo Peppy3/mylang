@@ -2,14 +2,15 @@
 #define PARSER_CTX_H_
 
 #include <ParserFile.h>
-#include <tokenizer/TokenStream.h>
+#include <tokenizer/Token.h>
 #include <ast/Ast.h>
 
 struct ParserCtx {
 	char *source_path;
 	ParserFile src;
-	TokenStream tokens;
 	Ast ast;
+	Token current_token;
+	Token lookahead_token;
 	int num_errors;
 };
 
