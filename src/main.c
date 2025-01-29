@@ -3,7 +3,7 @@
 #include <string.h>
 
 #include <util.h>
-#include <parser/ParserCtx.h>
+#include <CompileUnit.h>
 #include <ast/Ast.h>
 #include <ast/AstPrint.h>
 #include <parser/Parser.h>
@@ -11,7 +11,7 @@
 #include <args/args.h>
 
 int main(int argc, char **argv) {
-	ParserCtx ctx = {0};
+	CompileUnit unit = {0};
 	ArgOptions options;
 
 	if (args_parse(argc, argv, &options)) {
@@ -23,29 +23,32 @@ int main(int argc, char **argv) {
 		return EXIT_FAILURE;
 	}
 	
-	if (ParserCtx_Setup(&ctx, options.input_file)) {
+	if (CompileUnit_Setup(&unit, options.input_file)) {
 		return EXIT_FAILURE;
 	}
 
-	int num_errors = parse(&ctx);
+	int num_errors = parse(&unit);
 
 	if (num_errors > 0) {
 		printf("Number of parser errors: %d\n", num_errors);
+		CompileUnit_Teardown(&unit);
 		return EXIT_FAILURE;
 	}
 	else if (num_errors < 0) {
 		fprintf(stderr, "Inernal parser error\n");
+		CompileUnit_Teardown(&unit);
 		return EXIT_FAILURE;
 	}
 
 	if (options.command == ArgSubcommand_dump_ast) {
-		Ast_PrettyPrint(&ctx, stdout);
+		Ast_PrettyPrint(&unit, stdout);
+		CompileUnit_Teardown(&unit);
 		return EXIT_SUCCESS;
 	}
 
 	
 	
-	ParserCtx_Teardown(&ctx);
+	CompileUnit_Teardown(&unit);
 
 	return EXIT_SUCCESS;
 }

@@ -5,7 +5,7 @@
 #include <tokenizer/Token.h>
 #include <ast/Ast.h>
 
-struct ParserCtx {
+struct CompileUnit {
 	char *source_path;
 	ParserFile src;
 	Ast ast;
@@ -14,11 +14,12 @@ struct ParserCtx {
 	int num_errors;
 };
 
-typedef struct ParserCtx ParserCtx;
+typedef struct CompileUnit CompileUnit;
 
-int ParserCtx_Setup(ParserCtx *ctx, char *filepath);
+// returns 0 on success and -1 on error
+int CompileUnit_Setup(CompileUnit *unit, char *filepath);
 
-void ParserCtx_Teardown(ParserCtx *ctx);
+void CompileUnit_Teardown(CompileUnit *unit);
 
 #endif /* PARSER_CTX_H_ */
 

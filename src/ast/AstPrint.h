@@ -4,12 +4,12 @@
 #include <stdio.h>
 
 #include <ast/Ast.h>
-#include <parser/ParserCtx.h>
+#include <CompileUnit.h>
 
 // pretty prints the entire ast
-void Ast_PrettyPrint(ParserCtx *ctx, FILE *fp);
+void Ast_PrettyPrint(CompileUnit *unit, FILE *fp);
 
-#define X(name) void Ast_Print_##name(ParserCtx *ctx, FILE *fp, AstNodeHandle handle);
+#define X(name) void Ast_Print_##name(CompileUnit *unit, FILE *fp, AstNodeHandle handle);
 AST_NODE_X_LIST
 #undef X
 

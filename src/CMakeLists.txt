@@ -5,6 +5,7 @@ add_subdirectory(tokenizer)
 add_subdirectory(parser)
 add_subdirectory(ast)
 
+target_sources(${PROJECT_NAME} PRIVATE CompileUnit.c)
 target_sources(${PROJECT_NAME} PRIVATE ParserFile.c)
 target_sources(${PROJECT_NAME} PRIVATE Keywords.c)
 target_sources(${PROJECT_NAME} PRIVATE util.c)

@@ -11,12 +11,13 @@
 #include <ParserFile.h>
 #include <tokenizer/Token.h>
 #include <tokenizer/Tokenizer.h>
+#include <CompileUnit.h>
 #include <ast/Ast.h>
 
 #include <parser/Parser.h>
 
 #define PARSER_FUNC(name, ...) \
-	static AstNodeHandle parse_##name(ParserCtx *this __VA_OPT__(,) __VA_ARGS__)
+	static AstNodeHandle parse_##name(CompileUnit *this __VA_OPT__(,) __VA_ARGS__)
 
 #define PARSE(func, ...) parse_##func(this __VA_OPT__(,) __VA_ARGS__)
 #define ERROR(msg, ...) parser_error(this, msg __VA_OPT__(,) __VA_ARGS__)
@@ -27,7 +28,7 @@
 
 static jmp_buf parser_env;
 
-size_t calc_line_num(const ParserCtx *ctx, const Token *tok) {
+size_t calc_line_num(const CompileUnit *ctx, const Token *tok) {
 	size_t line_num = 1;
 	for (int32_t i = 0; i < tok->pos; i++) {
 		if (ctx->src.data[i] == '\n') {
@@ -37,7 +38,7 @@ size_t calc_line_num(const ParserCtx *ctx, const Token *tok) {
 	return line_num;
 }
 
-size_t calc_line_pos(const ParserCtx *ctx, const Token *tok) {
+size_t calc_line_pos(const CompileUnit *ctx, const Token *tok) {
 	size_t line_pos = tok->pos;
 
 	while (line_pos > 0 && ctx->src.data[line_pos] != '\n') {
@@ -48,7 +49,7 @@ size_t calc_line_pos(const ParserCtx *ctx, const Token *tok) {
 }
 
 __attribute__((format (printf, 2, 3)))
-void parser_error(ParserCtx *this, const char *err_fmt, ...) {
+void parser_error(CompileUnit *this, const char *err_fmt, ...) {
 	this->num_errors += 1;
 
 	if (CURRENT.type == TOKEN_eof) {
@@ -94,7 +95,7 @@ void parser_error(ParserCtx *this, const char *err_fmt, ...) {
 }
 
 // gives the idex of the token or -1 if it's the end of the list
-Token parser_next(ParserCtx *this) {
+Token parser_next(CompileUnit *this) {
 	Token next = CURRENT;
 	CURRENT = LOOKAHEAD;
 	LOOKAHEAD = NextToken(&this->src);
@@ -572,7 +573,7 @@ PARSER_FUNC(compound_statement) {
 	return list;
 }
 
-int parse(ParserCtx *this) {
+int parse(CompileUnit *this) {
 
 	CURRENT = NextToken(&this->src);
 	LOOKAHEAD = NextToken(&this->src);
