@@ -4,11 +4,13 @@
 #include <ParserFile.h>
 #include <tokenizer/Token.h>
 #include <ast/Ast.h>
+#include <ir/IR.h>
 
 struct CompileUnit {
 	char *source_path;
 	ParserFile src;
 	Ast ast;
+	IR ir;
 	Token current_token;
 	Token lookahead_token;
 	int num_errors;

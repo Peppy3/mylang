@@ -13,6 +13,10 @@ Build dependencies:
 - ISO C11 standard compliant C compiler
 - cmake
 - favourite build tool that works with cmake
+- llvm 19
+- libedit
+- libzstd
+- libcurl
 
 ### How to build
 
