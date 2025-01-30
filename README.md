@@ -15,6 +15,8 @@ Build dependencies:
 - favourite build tool that works with cmake
 - llvm 19
 - libedit
+- libzlib
+- libXml2
 - libzstd
 - libcurl
 
