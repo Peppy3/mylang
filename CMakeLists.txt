@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.19)
 
-project(mylang C)
+project(mylang)
 
 add_compile_options(-Wall -Wextra)
 

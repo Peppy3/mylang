@@ -1,11 +1,13 @@
 
 
 add_subdirectory(args)
+add_subdirectory(backends)
 add_subdirectory(tokenizer)
 add_subdirectory(parser)
 add_subdirectory(ast)
 add_subdirectory(ir)
 
+target_sources(${PROJECT_NAME} PRIVATE stb_ds.c)
 target_sources(${PROJECT_NAME} PRIVATE CompileUnit.c)
 target_sources(${PROJECT_NAME} PRIVATE ParserFile.c)
 target_sources(${PROJECT_NAME} PRIVATE Keywords.c)

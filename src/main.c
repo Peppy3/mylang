@@ -10,9 +10,13 @@
 
 #include <args/args.h>
 
+#include <backends/llvm.h>
+
 int main(int argc, char **argv) {
 	CompileUnit unit = {0};
 	ArgOptions options;
+
+	generate_llvm();
 
 	if (args_parse(argc, argv, &options)) {
 		return EXIT_FAILURE;
